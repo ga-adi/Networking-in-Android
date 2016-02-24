@@ -32,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<String> mListArray;
     ArrayAdapter<String> mAdapter;
 
+    WalmartAsyncTask mWalmartAsyncTask;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,24 +53,36 @@ public class MainActivity extends AppCompatActivity {
         mCerealButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                WalmartAsyncTask walmartAsyncTask = new WalmartAsyncTask();
-                walmartAsyncTask.execute(mCerealString);
+                if (mWalmartAsyncTask != null && mWalmartAsyncTask.getStatus() != AsyncTask.Status.FINISHED) {
+                    mWalmartAsyncTask.cancel(true);
+                }
+                mWalmartAsyncTask = new WalmartAsyncTask();
+                mWalmartAsyncTask.execute(mCerealString);
+
             }
         });
 
         mChocolateButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                WalmartAsyncTask walmartAsyncTask = new WalmartAsyncTask();
-                walmartAsyncTask.execute(mChocolateString);
+                if (mWalmartAsyncTask != null && mWalmartAsyncTask.getStatus() != AsyncTask.Status.FINISHED) {
+                    mWalmartAsyncTask.cancel(true);
+                }
+                mWalmartAsyncTask = new WalmartAsyncTask();
+
+                mWalmartAsyncTask.execute(mChocolateString);
             }
         });
 
         mTeaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                WalmartAsyncTask walmartAsyncTask = new WalmartAsyncTask();
-                walmartAsyncTask.execute(mTeaString);
+                if (mWalmartAsyncTask != null && mWalmartAsyncTask.getStatus() != AsyncTask.Status.FINISHED) {
+                    mWalmartAsyncTask.cancel(true);
+                }
+                mWalmartAsyncTask = new WalmartAsyncTask();
+
+                mWalmartAsyncTask.execute(mTeaString);
 
             }
         });
@@ -98,6 +112,7 @@ public class MainActivity extends AppCompatActivity {
         protected String doInBackground(String... urls) {
             String data = "";
 
+
             try {
                 URL url = new URL(urls[0]);
                 HttpURLConnection connection = (HttpURLConnection) url.openConnection();
@@ -108,7 +123,7 @@ public class MainActivity extends AppCompatActivity {
                 data = getInputData(inStream);
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
-                ;
+
             }
 
             try {
@@ -122,6 +137,7 @@ public class MainActivity extends AppCompatActivity {
                     String price = object.optString("salePrice");
                     String nameAndPrice = name + "\nPrice: $" + price;
                     mListArray.add(nameAndPrice);
+//                    if (isCancelled()){break;}
                 }
 
 
@@ -139,6 +155,4 @@ public class MainActivity extends AppCompatActivity {
             mAdapter.notifyDataSetChanged();
         }
     }
-
-
 }
