@@ -1,0 +1,532 @@
+{
+    "query": "cereal",
+    "sort": "relevance",
+    "responseGroup": "base",
+    "totalResults": 5221,
+    "start": 1,
+    "numItems": 10,
+    "items": [{
+        "itemId": 25847978,
+        "parentItemId": 25847978,
+        "name": "Honey Nut Cheerios Gluten Free Cereal, 26.6 oz",
+        "salePrice": 4.7,
+        "upc": "016000459335",
+        "categoryPath": "Food/Breakfast & Cereal/All Cereal",
+        "shortDescription": "&lt;p&gt;Honey Nut Cheerios Gluten Free Cereal contains 15 grams of whole per serving. At least 48 grams are recommended daily. A whole grain food is made by using all three parts of the grain. All General Mills Big G Cereals contain more whole grain than any other single ingredient. Same Cheerios, simply gluten free. The real honey taste you love has always come with oats that are naturally gluten free. We're making sure they stay that way. When Phil, a member of the Cheerios team for over 50 years, found out his daughter-in-law couldn't eat gluten, he knew his team had to find a way to make sure every family could share breakfast together. We know there are lots of families out there who don't want to let dietary restrictions get in the way of time together. Now that Honey Nut Cheerios are gluten free, more families than ever can sit down to share the taste of real honey and oats. After all, bringing families together around the breakfast table is exactly why we're here.&lt;/p&gt;",
+        "longDescription": "&lt;b&gt;Honey Nut Cheerios Gluten Free Cereal:&lt;/b&gt;&lt;ul&gt;&lt;li&gt;First ingredient whole grain oats&lt;/li&gt;&lt;li&gt;Can help lower cholesterol (Three grams of soluble fiber daily from whole grain oat foods, like Honey Nut Cheerios Cereal, in a diet low in saturated fat and cholesterol, may reduce the risk of heart disease. Honey Nut Cheerios Cereal provides .75 gram per serving.)&lt;/li&gt;&lt;li&gt;Made with real honey&lt;/li&gt;&lt;li&gt;Simply gluten free&lt;/li&gt;&lt;li&gt;No high fructose corn syrup&lt;/li&gt;&lt;li&gt;No artificial flavors&lt;/li&gt;&lt;li&gt;No artificial colors&lt;/li&gt;&lt;/ul&gt;",
+        "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-44e0/k2-_55d618c6-44cc-4476-9b22-51dfc11ab6c9.v1.jpg",
+        "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-e933/k2-_bfda86b6-6881-4f5e-bc12-3e6e0164f8d9.v1.jpg",
+        "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-d973/k2-_34e3f861-21ef-4870-af6c-47a17764ca05.v1.jpg",
+        "productTrackingUrl": "http://linksynergy.walmart.com/fs-bin/click?id=|LSNID|&offerid=223073.7200&type=14&catid=8&subid=0&hid=7200&tmpid=1082&RD_PARM1=http%253A%252F%252Fwww.walmart.com%252Fip%252FHoney-Nut-Cheerios-Gluten-Free-Cereal-26.6-oz%252F25847978%253Faffp1%253D2uiMp4TqucDm41BD9WHhD5b35xU6OuWlkv5w9YjCVg8%2526affilsrc%253Dapi",
+        "standardShipRate": 4.97,
+        "marketplace": false,
+        "modelNumber": "45933",
+        "productUrl": "http://c.affil.walmart.com/t/api02?l=http%3A%2F%2Fwww.walmart.com%2Fip%2FHoney-Nut-Cheerios-Gluten-Free-Cereal-26.6-oz%2F25847978%3Faffp1%3D2uiMp4TqucDm41BD9WHhD5b35xU6OuWlkv5w9YjCVg8%26affilsrc%3Dapi%26veh%3Daff%26wmlspartner%3Dreadonlyapi",
+        "customerRating": "4.848",
+        "numReviews": 256,
+        "customerRatingImage": "http://i2.walmartimages.com/i/CustRating/4_8.gif",
+        "categoryNode": "976759_976783_1001339",
+        "bundle": false,
+        "addToCartUrl": "http://c.affil.walmart.com/t/api02?l=http%3A%2F%2Faffil.walmart.com%2Fcart%2FaddToCart%3Fitems%3D25847978%7C1%26affp1%3D2uiMp4TqucDm41BD9WHhD5b35xU6OuWlkv5w9YjCVg8%26affilsrc%3Dapi%26veh%3Daff%26wmlspartner%3Dreadonlyapi",
+        "affiliateAddToCartUrl": "http://linksynergy.walmart.com/fs-bin/click?id=|LSNID|&offerid=223073.7200&type=14&catid=8&subid=0&hid=7200&tmpid=1082&RD_PARM1=http%253A%252F%252Faffil.walmart.com%252Fcart%252FaddToCart%253Fitems%253D25847978%257C1%2526affp1%253D2uiMp4TqucDm41BD9WHhD5b35xU6OuWlkv5w9YjCVg8%2526affilsrc%253Dapi",
+        "giftOptions": {
+            "allowGiftWrap": false,
+            "allowGiftMessage": false,
+            "allowGiftReceipt": false
+        },
+        "imageEntities": [{
+            "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-d035/k2-_0ed10c18-54f2-4b6d-8ea2-cc8bceaee4e5.v1.jpg",
+            "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-4302/k2-_ce66160b-31e4-4e36-bb67-463fa9347561.v1.jpg",
+            "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-8e86/k2-_3aaa4b55-486f-4333-b766-1d95b03ac498.v1.jpg",
+            "entityType": "SECONDARY"
+        }, {
+            "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-b624/k2-_5322ec53-24d3-481b-ade5-6d84acc4526c.v1.jpg",
+            "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-fe18/k2-_3e92971a-bac7-4e73-ad24-f25c0b04aafb.v1.jpg",
+            "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-2cbc/k2-_82ce68c5-3991-4a7a-acef-b33e939f05ae.v1.jpg",
+            "entityType": "SECONDARY"
+        }, {
+            "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-90b5/k2-_d857bf02-b291-4e5f-8984-51573489801c.v1.jpg",
+            "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-5a53/k2-_1aa3fd94-8e71-4479-9448-b7077cca3baa.v1.jpg",
+            "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-61fa/k2-_6e038eb6-8dc7-4fb4-a87c-48a239ed13c4.v1.jpg",
+            "entityType": "SECONDARY"
+        }, {
+            "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-7b33/k2-_e55e4f0a-9716-4cc5-a543-fe5874ce26ce.v1.jpg",
+            "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-f4bf/k2-_d0f274da-972b-4b1c-81b0-b4a88bc31ae6.v1.jpg",
+            "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-84d6/k2-_3289023b-c6d0-4244-8ce7-83a3ce8e818f.v1.jpg",
+            "entityType": "SECONDARY"
+        }, {
+            "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-1e7b/k2-_e7e0a02e-8d41-4ce4-9f67-c7c3ce9cfc80.v1.jpg",
+            "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-b688/k2-_d133b492-c045-4e63-8ad3-f831979a29c8.v1.jpg",
+            "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-d0b0/k2-_b056d324-a65f-42a0-bf1f-920a61f7604c.v1.jpg",
+            "entityType": "SECONDARY"
+        }, {
+            "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-44e0/k2-_55d618c6-44cc-4476-9b22-51dfc11ab6c9.v1.jpg",
+            "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-e933/k2-_bfda86b6-6881-4f5e-bc12-3e6e0164f8d9.v1.jpg",
+            "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-d973/k2-_34e3f861-21ef-4870-af6c-47a17764ca05.v1.jpg",
+            "entityType": "PRIMARY"
+        }],
+        "availableOnline": true
+    }, {
+        "itemId": 25875664,
+        "parentItemId": 25875664,
+        "name": "Kellogg's Frosted Flakes Cereal, 33 oz",
+        "salePrice": 4.81,
+        "upc": "038000937729",
+        "categoryPath": "Food/Breakfast & Cereal/All Cereal",
+        "shortDescription": "&lt;ul class=&quot;noindent&quot;&gt;&lt;li&gt;Good source of vitamin D&lt;/li&gt;&lt;li&gt;They're gr-r-reat!&lt;/li&gt;&lt;li&gt;Less than 50 cents a bowl&lt;/li&gt;&lt;/ul&gt;",
+        "longDescription": "&lt;b&gt;Kellogg's Frosted Flakes Cereal:&lt;/b&gt;&lt;ul class=&quot;noindent&quot;&gt;&lt;li&gt;Serve with milk or your favorite milk alternative&lt;/li&gt;&lt;li&gt;Good source of Vitamin D&lt;/li&gt;&lt;li&gt;They're gr-r-reat!&lt;/li&gt;&lt;li&gt;Kosher&lt;/li&gt;&lt;li&gt;Serve with milk or your favorite milk alternative&lt;/li&gt;&lt;li&gt;This Kellogg's cereal is a good source of protein&lt;/li&gt;&lt;/ul&gt;",
+        "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-8652/k2-_235f6fd3-403a-47a2-a4b8-5cc0b4b330bc.v1.jpg",
+        "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-267d/k2-_ac640b4c-5697-4267-bde2-f7157c872a7f.v2.jpg",
+        "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-5ef2/k2-_a900bbcf-efab-423f-92c7-ad71ab53a544.v1.jpg",
+        "productTrackingUrl": "http://linksynergy.walmart.com/fs-bin/click?id=|LSNID|&offerid=223073.7200&type=14&catid=8&subid=0&hid=7200&tmpid=1082&RD_PARM1=http%253A%252F%252Fwww.walmart.com%252Fip%252FKellogg-s-Frosted-Flakes-Cereal-33-oz%252F25875664%253Faffp1%253D2uiMp4TqucDm41BD9WHhD5b35xU6OuWlkv5w9YjCVg8%2526affilsrc%253Dapi",
+        "standardShipRate": 4.97,
+        "marketplace": false,
+        "modelNumber": "3800093771",
+        "productUrl": "http://c.affil.walmart.com/t/api02?l=http%3A%2F%2Fwww.walmart.com%2Fip%2FKellogg-s-Frosted-Flakes-Cereal-33-oz%2F25875664%3Faffp1%3D2uiMp4TqucDm41BD9WHhD5b35xU6OuWlkv5w9YjCVg8%26affilsrc%3Dapi%26veh%3Daff%26wmlspartner%3Dreadonlyapi",
+        "customerRating": "4.704",
+        "numReviews": 134,
+        "customerRatingImage": "http://i2.walmartimages.com/i/CustRating/4_7.gif",
+        "categoryNode": "976759_976783_1001339",
+        "bundle": false,
+        "addToCartUrl": "http://c.affil.walmart.com/t/api02?l=http%3A%2F%2Faffil.walmart.com%2Fcart%2FaddToCart%3Fitems%3D25875664%7C1%26affp1%3D2uiMp4TqucDm41BD9WHhD5b35xU6OuWlkv5w9YjCVg8%26affilsrc%3Dapi%26veh%3Daff%26wmlspartner%3Dreadonlyapi",
+        "affiliateAddToCartUrl": "http://linksynergy.walmart.com/fs-bin/click?id=|LSNID|&offerid=223073.7200&type=14&catid=8&subid=0&hid=7200&tmpid=1082&RD_PARM1=http%253A%252F%252Faffil.walmart.com%252Fcart%252FaddToCart%253Fitems%253D25875664%257C1%2526affp1%253D2uiMp4TqucDm41BD9WHhD5b35xU6OuWlkv5w9YjCVg8%2526affilsrc%253Dapi",
+        "giftOptions": {
+            "allowGiftWrap": false,
+            "allowGiftMessage": false,
+            "allowGiftReceipt": false
+        },
+        "imageEntities": [{
+            "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-cca2/k2-_c3637458-844a-4cdc-bc61-5713855dfe33.v1.jpg",
+            "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-ce2d/k2-_29b4fe7f-2527-4b03-b39c-f6f033e2f833.v1.jpg",
+            "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-8575/k2-_64d6ab87-9102-4250-965a-1532f2a56cf6.v1.jpg",
+            "entityType": "SECONDARY"
+        }, {
+            "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-919e/k2-_464ba6d3-4fe6-41e4-a089-4fe570e3c10e.v1.jpg",
+            "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-803d/k2-_f17e3270-32f3-4c99-83ed-0f17adc63dec.v1.jpg",
+            "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-3beb/k2-_7d65fc20-cf14-4535-aaf5-e1ed0350eb65.v1.jpg",
+            "entityType": "SECONDARY"
+        }, {
+            "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-5ffb/k2-_2fdad90e-91e5-46d0-8670-e60a588ab75b.v1.jpg",
+            "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-8485/k2-_eeca1a35-15f4-4288-b713-1a0d1ee4591b.v1.jpg",
+            "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-ee64/k2-_a08a2a4c-2c1a-4d3c-953d-2ff1da47132f.v1.jpg",
+            "entityType": "SECONDARY"
+        }, {
+            "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-8652/k2-_235f6fd3-403a-47a2-a4b8-5cc0b4b330bc.v1.jpg",
+            "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-267d/k2-_ac640b4c-5697-4267-bde2-f7157c872a7f.v2.jpg",
+            "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-5ef2/k2-_a900bbcf-efab-423f-92c7-ad71ab53a544.v1.jpg",
+            "entityType": "PRIMARY"
+        }, {
+            "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-62ae/k2-_b66320fb-828d-48ee-ac60-b795e8e0db12.v1.jpg",
+            "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-498b/k2-_ec38a193-03c7-4822-815d-86c7246982c1.v1.jpg",
+            "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-494f/k2-_c977660d-f7ee-448d-bf2f-f399c7491197.v1.jpg",
+            "entityType": "SECONDARY"
+        }, {
+            "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-5c3f/k2-_b5bed417-2b5a-4b2e-9751-54648dda6c17.v1.jpg",
+            "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-d593/k2-_d5b2e611-35c0-4981-af98-548551b54b80.v1.jpg",
+            "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-b152/k2-_ee6e9195-6bed-44b1-b261-a6b4e4aca6c1.v1.jpg",
+            "entityType": "SECONDARY"
+        }],
+        "availableOnline": true
+    }, {
+        "itemId": 34164100,
+        "parentItemId": 34164100,
+        "name": "Post Honey Bunches of Oats With Crispy Almonds Cereal, 27 oz",
+        "salePrice": 4.18,
+        "upc": "884912003911",
+        "categoryPath": "Food/Breakfast & Cereal/All Cereal",
+        "shortDescription": "Post Honey Bunches of Oats Cereal is a tasty solution for breakfast or snack time. It includes a mixture of sliced California almonds, flakes and crunchy oat clusters for a nutty twist to the original Honey Bunches of Oats cereal. Get a smart start to the day with this Post heart-healthy cereal. Available in a 27-oz size, it comes in a family-sized box and provides nine essential vitamins and minerals, as well as zero grams of saturated and trans fats. This kosher cereal with almonds is a healthy food option for any time of the day. It contains 10g of whole grains per serving, and you can feel good about your family having a healthy breakfast or treat. Nutritionists recommend eating 3 or more servings of whole grain foods per day. You can appreciate the complex taste of this Post Honey Bunches of Oats Cereal. Be sure and keep your supply of this great tasting cereal handy for the whole family to enjoy.",
+        "longDescription": "&lt;b&gt;Post Honey Bunches of Oats Cereal with Almonds, 27 oz:&lt;/b&gt;&lt;br&gt;&lt;ul&gt;&lt;li&gt;Family size&lt;/li&gt;&lt;li&gt;9 essential vitamins and minerals&lt;/li&gt;&lt;li&gt;0g of trans and saturated fat&lt;/li&gt;&lt;li&gt;0mg of cholesterol per serving&lt;/li&gt;&lt;li&gt;Heart-healthy cereal&lt;/li&gt;&lt;li&gt;Kosher dairy&lt;/li&gt;&lt;li&gt;This Honey Bunches of Oats cereal contains almonds&lt;/li&gt;&lt;/ul&gt;",
+        "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-f628/k2-_cebf3714-c8f7-40a0-b782-dc2eb601695e.v1.jpg",
+        "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-b107/k2-_549b2e91-6372-4b3d-88a1-2c949c76f8c4.v1.jpg",
+        "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-72e9/k2-_fca454fd-0bb9-4326-9ac5-28145ff5608d.v1.jpg",
+        "productTrackingUrl": "http://linksynergy.walmart.com/fs-bin/click?id=|LSNID|&offerid=223073.7200&type=14&catid=8&subid=0&hid=7200&tmpid=1082&RD_PARM1=http%253A%252F%252Fwww.walmart.com%252Fip%252FPost-Honey-Bunches-of-Oats-with-Crispy-Almonds-Cereal-27-oz%252F34164100%253Faffp1%253D2uiMp4TqucDm41BD9WHhD5b35xU6OuWlkv5w9YjCVg8%2526affilsrc%253Dapi",
+        "standardShipRate": 4.97,
+        "marketplace": false,
+        "modelNumber": "200391",
+        "productUrl": "http://c.affil.walmart.com/t/api02?l=http%3A%2F%2Fwww.walmart.com%2Fip%2FPost-Honey-Bunches-of-Oats-with-Crispy-Almonds-Cereal-27-oz%2F34164100%3Faffp1%3D2uiMp4TqucDm41BD9WHhD5b35xU6OuWlkv5w9YjCVg8%26affilsrc%3Dapi%26veh%3Daff%26wmlspartner%3Dreadonlyapi",
+        "customerRating": "4.778",
+        "numReviews": 72,
+        "customerRatingImage": "http://i2.walmartimages.com/i/CustRating/4_8.gif",
+        "categoryNode": "976759_976783_1001339",
+        "bundle": false,
+        "addToCartUrl": "http://c.affil.walmart.com/t/api02?l=http%3A%2F%2Faffil.walmart.com%2Fcart%2FaddToCart%3Fitems%3D34164100%7C1%26affp1%3D2uiMp4TqucDm41BD9WHhD5b35xU6OuWlkv5w9YjCVg8%26affilsrc%3Dapi%26veh%3Daff%26wmlspartner%3Dreadonlyapi",
+        "affiliateAddToCartUrl": "http://linksynergy.walmart.com/fs-bin/click?id=|LSNID|&offerid=223073.7200&type=14&catid=8&subid=0&hid=7200&tmpid=1082&RD_PARM1=http%253A%252F%252Faffil.walmart.com%252Fcart%252FaddToCart%253Fitems%253D34164100%257C1%2526affp1%253D2uiMp4TqucDm41BD9WHhD5b35xU6OuWlkv5w9YjCVg8%2526affilsrc%253Dapi",
+        "giftOptions": {
+            "allowGiftWrap": false,
+            "allowGiftMessage": false,
+            "allowGiftReceipt": false
+        },
+        "imageEntities": [{
+            "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-f628/k2-_cebf3714-c8f7-40a0-b782-dc2eb601695e.v1.jpg",
+            "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-b107/k2-_549b2e91-6372-4b3d-88a1-2c949c76f8c4.v1.jpg",
+            "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-72e9/k2-_fca454fd-0bb9-4326-9ac5-28145ff5608d.v1.jpg",
+            "entityType": "PRIMARY"
+        }],
+        "availableOnline": true
+    }, {
+        "itemId": 25847977,
+        "parentItemId": 25847977,
+        "name": "Cinnamon Toast Crunch Cereal, 23.6 oz",
+        "salePrice": 4.7,
+        "upc": "016000459328",
+        "categoryPath": "Food/Breakfast & Cereal/All Cereal",
+        "shortDescription": "&lt;p&gt;Cinnamon Toast Crunch Cereal contains 12 grams of whole grain per serving. It also contains real cinnamon and sugar in every bite. With only 130 calories per serving, this kosher, cinnamon crunch cereal makes an ideal meal or snack.&lt;/p&gt;",
+        "longDescription": "&lt;b&gt;Cinnamon Toast Crunch Cereal:&lt;/b&gt;&lt;ul&gt;&lt;li&gt;Whole grain first ingredient&lt;/li&gt;&lt;li&gt;12 grams of whole grain per serving&lt;/li&gt;&lt;li&gt;Real cinnamon and sugar in every bite&lt;/li&gt;&lt;li&gt;130 calories per serving&lt;/li&gt;&lt;li&gt;Cinnamon toast cereal is kosher&lt;/li&gt;&lt;li&gt;General Mills Big G cereals contain more whole grain than any other single ingredient&lt;/li&gt;&lt;li&gt;www.wholegrainnation.com&lt;/li&gt;&lt;/ul&gt;",
+        "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-5fb0/k2-_aeb22204-b2c5-4ea1-bc53-5412fe4fc7a5.v3.jpg",
+        "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-c300/k2-_3f2bccba-1ec0-48c8-ad30-b14974535fab.v3.jpg",
+        "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-d5a4/k2-_c1f4a61c-596a-44e7-a7c2-0ff5ddd6ef52.v3.jpg",
+        "productTrackingUrl": "http://linksynergy.walmart.com/fs-bin/click?id=|LSNID|&offerid=223073.7200&type=14&catid=8&subid=0&hid=7200&tmpid=1082&RD_PARM1=http%253A%252F%252Fwww.walmart.com%252Fip%252FCinnamon-Toast-Crunch-Cereal-23.6-oz%252F25847977%253Faffp1%253D2uiMp4TqucDm41BD9WHhD5b35xU6OuWlkv5w9YjCVg8%2526affilsrc%253Dapi",
+        "standardShipRate": 4.97,
+        "marketplace": false,
+        "modelNumber": "45932",
+        "productUrl": "http://c.affil.walmart.com/t/api02?l=http%3A%2F%2Fwww.walmart.com%2Fip%2FCinnamon-Toast-Crunch-Cereal-23.6-oz%2F25847977%3Faffp1%3D2uiMp4TqucDm41BD9WHhD5b35xU6OuWlkv5w9YjCVg8%26affilsrc%3Dapi%26veh%3Daff%26wmlspartner%3Dreadonlyapi",
+        "customerRating": "4.757",
+        "numReviews": 37,
+        "customerRatingImage": "http://i2.walmartimages.com/i/CustRating/4_8.gif",
+        "categoryNode": "976759_976783_1001339",
+        "bundle": false,
+        "addToCartUrl": "http://c.affil.walmart.com/t/api02?l=http%3A%2F%2Faffil.walmart.com%2Fcart%2FaddToCart%3Fitems%3D25847977%7C1%26affp1%3D2uiMp4TqucDm41BD9WHhD5b35xU6OuWlkv5w9YjCVg8%26affilsrc%3Dapi%26veh%3Daff%26wmlspartner%3Dreadonlyapi",
+        "affiliateAddToCartUrl": "http://linksynergy.walmart.com/fs-bin/click?id=|LSNID|&offerid=223073.7200&type=14&catid=8&subid=0&hid=7200&tmpid=1082&RD_PARM1=http%253A%252F%252Faffil.walmart.com%252Fcart%252FaddToCart%253Fitems%253D25847977%257C1%2526affp1%253D2uiMp4TqucDm41BD9WHhD5b35xU6OuWlkv5w9YjCVg8%2526affilsrc%253Dapi",
+        "giftOptions": {
+            "allowGiftWrap": false,
+            "allowGiftMessage": false,
+            "allowGiftReceipt": false
+        },
+        "imageEntities": [{
+            "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-978a/k2-_079c3b9a-ecfd-4105-9fb2-bcc993a93a5f.v1.jpg",
+            "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-a6aa/k2-_270fff1e-562c-4d1f-a561-f53a3f48bbef.v1.jpg",
+            "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-49a0/k2-_b79caf22-50a7-4a9b-9c6a-9e3cd6b58212.v1.jpg",
+            "entityType": "SECONDARY"
+        }, {
+            "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-5278/k2-_501660c6-9ec9-47b8-aec2-d4f6dce73ac6.v1.jpg",
+            "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-80ea/k2-_3f4f7162-bbdb-4341-8e72-ce507fe802de.v1.jpg",
+            "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-3dc2/k2-_df37d51e-3fa0-40bf-a9a1-b105b791af4e.v1.jpg",
+            "entityType": "SECONDARY"
+        }, {
+            "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-c8b7/k2-_22d90b67-6077-425b-9cc5-620620b4a8a3.v1.jpg",
+            "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-7460/k2-_295bcf3c-eccc-4c25-891d-d93613574d64.v1.jpg",
+            "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-d70b/k2-_f8fc6f6d-c610-49e3-81f0-64ba5c556b89.v1.jpg",
+            "entityType": "SECONDARY"
+        }, {
+            "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-d78a/k2-_aa4b736c-9490-4850-b8e7-3c489d97de21.v1.jpg",
+            "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-1c2f/k2-_8f5e8d0e-8451-4bbb-9a84-5d35129caeda.v1.jpg",
+            "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-f83a/k2-_82ee2c31-125f-4b9a-96e8-d6907f11b219.v1.jpg",
+            "entityType": "SECONDARY"
+        }, {
+            "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-25c0/k2-_e6fb5e16-17cc-4784-97dd-8d5a52b3183a.v1.jpg",
+            "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-c07b/k2-_c5c5e5f8-b092-4fd9-8e3c-159594c3e1b6.v1.jpg",
+            "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-79b5/k2-_a893397f-3320-4741-85b0-ade358ec1562.v1.jpg",
+            "entityType": "SECONDARY"
+        }, {
+            "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-5fb0/k2-_aeb22204-b2c5-4ea1-bc53-5412fe4fc7a5.v3.jpg",
+            "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-c300/k2-_3f2bccba-1ec0-48c8-ad30-b14974535fab.v3.jpg",
+            "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-d5a4/k2-_c1f4a61c-596a-44e7-a7c2-0ff5ddd6ef52.v3.jpg",
+            "entityType": "PRIMARY"
+        }],
+        "availableOnline": true
+    }, {
+        "itemId": 25847972,
+        "parentItemId": 25847972,
+        "name": "Lucky Charms Cereal, 25.1 oz",
+        "salePrice": 4.7,
+        "upc": "016000459342",
+        "categoryPath": "Food/Breakfast & Cereal/All Cereal",
+        "shortDescription": "&lt;p&gt;The magically delicious Lucky Charms Cereal features frosted toasted oats and colored marshmallows that both kids and adults love. It's made with whole grain, which is the first ingredient, and it comes in an ample 25.1-oz size. Lucky Charms is fortified with 12 vitamins and minerals. This whole grain cereal is also a good source of calcium and only 110 calories per serving.&lt;br&gt;&lt;/p&gt;",
+        "longDescription": "&lt;b&gt;Lucky Charms Cereal:&lt;/b&gt;&lt;ul&gt;&lt;li&gt;Whole grain first ingredient&lt;/li&gt;&lt;li&gt;Good source of calcium&lt;/li&gt;&lt;li&gt;Fortified with 12 vitamins and minerals&lt;/li&gt;&lt;li&gt;110 calories per serving&lt;/li&gt;&lt;li&gt;Breakfast cereal comes in new giant size&lt;/li&gt;&lt;li&gt;Contains 11 grams of whole grain per serving&lt;/li&gt;&lt;/ul&gt;",
+        "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-c228/k2-_2cf33c21-a0b1-42ae-aab3-d3b8ea7ee937.v3.jpg",
+        "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-8f73/k2-_181e7983-a035-4740-bb1a-e4f3bb65ac47.v3.jpg",
+        "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-6cc0/k2-_1ba94f81-5a52-4e0c-b4b0-8053d6b4d131.v3.jpg",
+        "productTrackingUrl": "http://linksynergy.walmart.com/fs-bin/click?id=|LSNID|&offerid=223073.7200&type=14&catid=8&subid=0&hid=7200&tmpid=1082&RD_PARM1=http%253A%252F%252Fwww.walmart.com%252Fip%252FLucky-Charms-Cereal-25.1-oz%252F25847972%253Faffp1%253D2uiMp4TqucDm41BD9WHhD5b35xU6OuWlkv5w9YjCVg8%2526affilsrc%253Dapi",
+        "standardShipRate": 4.97,
+        "marketplace": false,
+        "modelNumber": "45934",
+        "productUrl": "http://c.affil.walmart.com/t/api02?l=http%3A%2F%2Fwww.walmart.com%2Fip%2FLucky-Charms-Cereal-25.1-oz%2F25847972%3Faffp1%3D2uiMp4TqucDm41BD9WHhD5b35xU6OuWlkv5w9YjCVg8%26affilsrc%3Dapi%26veh%3Daff%26wmlspartner%3Dreadonlyapi",
+        "customerRating": "4.712",
+        "numReviews": 132,
+        "customerRatingImage": "http://i2.walmartimages.com/i/CustRating/4_7.gif",
+        "categoryNode": "976759_976783_1001339",
+        "bundle": false,
+        "addToCartUrl": "http://c.affil.walmart.com/t/api02?l=http%3A%2F%2Faffil.walmart.com%2Fcart%2FaddToCart%3Fitems%3D25847972%7C1%26affp1%3D2uiMp4TqucDm41BD9WHhD5b35xU6OuWlkv5w9YjCVg8%26affilsrc%3Dapi%26veh%3Daff%26wmlspartner%3Dreadonlyapi",
+        "affiliateAddToCartUrl": "http://linksynergy.walmart.com/fs-bin/click?id=|LSNID|&offerid=223073.7200&type=14&catid=8&subid=0&hid=7200&tmpid=1082&RD_PARM1=http%253A%252F%252Faffil.walmart.com%252Fcart%252FaddToCart%253Fitems%253D25847972%257C1%2526affp1%253D2uiMp4TqucDm41BD9WHhD5b35xU6OuWlkv5w9YjCVg8%2526affilsrc%253Dapi",
+        "giftOptions": {
+            "allowGiftWrap": false,
+            "allowGiftMessage": false,
+            "allowGiftReceipt": false
+        },
+        "imageEntities": [{
+            "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-5a4d/k2-_6f3860d1-9c93-4b64-9a02-40abaf4b953f.v1.jpg",
+            "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-2838/k2-_48041dfc-7935-461c-8e61-c1511bb1f26e.v1.jpg",
+            "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-2a38/k2-_b2e7d07e-1574-4c93-aa74-6e9a8636e966.v1.jpg",
+            "entityType": "SECONDARY"
+        }, {
+            "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-c228/k2-_2cf33c21-a0b1-42ae-aab3-d3b8ea7ee937.v3.jpg",
+            "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-8f73/k2-_181e7983-a035-4740-bb1a-e4f3bb65ac47.v3.jpg",
+            "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-6cc0/k2-_1ba94f81-5a52-4e0c-b4b0-8053d6b4d131.v3.jpg",
+            "entityType": "PRIMARY"
+        }, {
+            "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-21fd/k2-_7dfd72ce-293c-4e0b-9e64-81f3629e1aa2.v1.jpg",
+            "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-322f/k2-_e3ca75e8-d243-4150-8297-32b95d39e992.v1.jpg",
+            "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-5d4e/k2-_947192e3-9c0d-4bae-937e-1a5dce7e1fff.v1.jpg",
+            "entityType": "SECONDARY"
+        }, {
+            "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-d3fc/k2-_97f1a56f-344c-4b2b-b6dc-b2576a0650f9.v1.jpg",
+            "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-b6be/k2-_9942fd5a-7f42-40ba-b0f5-762c36eca5a3.v1.jpg",
+            "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-bbe0/k2-_e40abaf1-f0e6-48f1-8b03-e02a6014517a.v1.jpg",
+            "entityType": "SECONDARY"
+        }, {
+            "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-6584/k2-_c65c099a-67d4-438a-961d-c894ee59eec7.v1.jpg",
+            "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-6582/k2-_eab63a81-a6d6-4498-a86b-c8660b11fafe.v1.jpg",
+            "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-2d75/k2-_ec0a10cd-ab6d-4d2f-82cf-17352a1a10d7.v1.jpg",
+            "entityType": "SECONDARY"
+        }, {
+            "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-bdc1/k2-_4ce12e73-a18e-46d4-aa4a-918fcad653ad.v1.jpg",
+            "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-b1b2/k2-_2c06cc06-405f-4146-b32d-193e02edb731.v1.jpg",
+            "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-576d/k2-_d1745f77-c2c9-43d2-8296-8ccf273f5131.v1.jpg",
+            "entityType": "SECONDARY"
+        }],
+        "availableOnline": true
+    }, {
+        "itemId": 25875665,
+        "parentItemId": 25875665,
+        "name": "Kellogg's Original Frosted Mini Wheats Cereal, 36 oz",
+        "salePrice": 4.81,
+        "upc": "038000937743",
+        "categoryPath": "Food/Breakfast & Cereal/All Cereal",
+        "shortDescription": "&lt;ul class=&quot;noindent&quot;&gt;&lt;li&gt;100% whole grain stamp: 46g or more per serving&lt;/li&gt;&lt;li&gt;100% whole wheat&lt;/li&gt;&lt;li&gt;Excellent source of fiber&lt;/li&gt;&lt;/ul&gt;",
+        "longDescription": "&lt;b&gt;Kellogg's Original Frosted Mini Wheats Cereal:&lt;/b&gt;&gt;&lt;ul class=&quot;noindent&quot;&gt;&lt;li&gt;100% whole grain stamp: 46g or more per serving&lt;/li&gt;&lt;li&gt;100% whole wheat&lt;/li&gt;&lt;li&gt;Excellent source of fiber&lt;/li&gt;&lt;li&gt;Per 21 biscuit serving: 190 calories; 0g saturated fat: 0% DV; 0mg sodium: 0% DV; 11g sugars&lt;/li&gt;&lt;li&gt;Eight amazing and delicious layers in every biscuit&lt;/li&gt;&lt;li&gt;Each 36-oz box of frosted wheat cereal contains 18 servings&lt;/li&gt;&lt;/ul&gt;",
+        "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-d964/k2-_5aa7ea9f-3415-4a97-9a83-7a49278d5293.v1.jpg",
+        "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-7f9a/k2-_38b48da3-d20f-474c-b2ec-4b8852b18175.v1.jpg",
+        "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-3fcd/k2-_4eb34704-ddda-4fa7-a49a-04096eee914c.v1.jpg",
+        "productTrackingUrl": "http://linksynergy.walmart.com/fs-bin/click?id=|LSNID|&offerid=223073.7200&type=14&catid=8&subid=0&hid=7200&tmpid=1082&RD_PARM1=http%253A%252F%252Fwww.walmart.com%252Fip%252FKellogg-s-Original-Frosted-Mini-Wheats-Cereal-36-oz%252F25875665%253Faffp1%253D2uiMp4TqucDm41BD9WHhD5b35xU6OuWlkv5w9YjCVg8%2526affilsrc%253Dapi",
+        "standardShipRate": 4.97,
+        "marketplace": false,
+        "modelNumber": "3800093773",
+        "productUrl": "http://c.affil.walmart.com/t/api02?l=http%3A%2F%2Fwww.walmart.com%2Fip%2FKellogg-s-Original-Frosted-Mini-Wheats-Cereal-36-oz%2F25875665%3Faffp1%3D2uiMp4TqucDm41BD9WHhD5b35xU6OuWlkv5w9YjCVg8%26affilsrc%3Dapi%26veh%3Daff%26wmlspartner%3Dreadonlyapi",
+        "customerRating": "4.946",
+        "numReviews": 56,
+        "customerRatingImage": "http://i2.walmartimages.com/i/CustRating/4_9.gif",
+        "categoryNode": "976759_976783_1001339",
+        "bundle": false,
+        "addToCartUrl": "http://c.affil.walmart.com/t/api02?l=http%3A%2F%2Faffil.walmart.com%2Fcart%2FaddToCart%3Fitems%3D25875665%7C1%26affp1%3D2uiMp4TqucDm41BD9WHhD5b35xU6OuWlkv5w9YjCVg8%26affilsrc%3Dapi%26veh%3Daff%26wmlspartner%3Dreadonlyapi",
+        "affiliateAddToCartUrl": "http://linksynergy.walmart.com/fs-bin/click?id=|LSNID|&offerid=223073.7200&type=14&catid=8&subid=0&hid=7200&tmpid=1082&RD_PARM1=http%253A%252F%252Faffil.walmart.com%252Fcart%252FaddToCart%253Fitems%253D25875665%257C1%2526affp1%253D2uiMp4TqucDm41BD9WHhD5b35xU6OuWlkv5w9YjCVg8%2526affilsrc%253Dapi",
+        "giftOptions": {
+            "allowGiftWrap": false,
+            "allowGiftMessage": false,
+            "allowGiftReceipt": false
+        },
+        "imageEntities": [{
+            "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-d140/k2-_f215ee69-e21e-4bc6-849b-e5a6475f0dcb.v1.jpg",
+            "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-266e/k2-_a1df2946-9f7c-45a6-b820-9c3f58c35c44.v1.jpg",
+            "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-5e09/k2-_debbf2cd-7237-43b3-b15c-fb0116f1dafd.v1.jpg",
+            "entityType": "SECONDARY"
+        }, {
+            "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-f7af/k2-_92a63204-550b-4261-8969-d9405b884fd2.v1.jpg",
+            "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-8f18/k2-_3d7626a8-f1c5-4b88-a1c6-0b62db4f160b.v1.jpg",
+            "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-1be4/k2-_df8636bd-41fd-448f-99a4-1ad26b5d835c.v1.jpg",
+            "entityType": "SECONDARY"
+        }, {
+            "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-6cd4/k2-_2ea8cf0c-90e7-48e6-a182-323b61d98083.v1.jpg",
+            "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-c7de/k2-_e4216bc3-97b3-4691-ae1f-4bc3387cdf98.v1.jpg",
+            "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-c49e/k2-_27b20943-1d4a-4305-ae6f-cca74e8b4e90.v1.jpg",
+            "entityType": "SECONDARY"
+        }, {
+            "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-d964/k2-_5aa7ea9f-3415-4a97-9a83-7a49278d5293.v1.jpg",
+            "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-7f9a/k2-_38b48da3-d20f-474c-b2ec-4b8852b18175.v1.jpg",
+            "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-3fcd/k2-_4eb34704-ddda-4fa7-a49a-04096eee914c.v1.jpg",
+            "entityType": "PRIMARY"
+        }],
+        "availableOnline": true
+    }, {
+        "itemId": 25875663,
+        "parentItemId": 25875663,
+        "name": "Kellogg's Froot Loops Cereal, 26 oz",
+        "salePrice": 4.81,
+        "upc": "038000937675",
+        "categoryPath": "Food/Breakfast & Cereal/All Cereal",
+        "shortDescription": "&lt;ul class=&quot;noindent&quot;&gt;&lt;li&gt;Whole grain stamp: 9g or more per serving&lt;/li&gt;&lt;li&gt;Good source of fiber&lt;/li&gt;&lt;/ul&gt;",
+        "longDescription": "&lt;b&gt;Kellogg's Froot Loops Cereal:&lt;/b&gt;&lt;ul&gt;&lt;li&gt;9g or more of whole grains per serving&lt;/li&gt;&lt;li&gt;Serve with milk or your favorite milk alternative&lt;/li&gt;&lt;li&gt;Good source of fiber&lt;/li&gt;&lt;li&gt;Per one cup serving: 110 calories, 0.5g saturated fat (3% DV), 135mg sodium (6% DV), 12g sugars&lt;/li&gt;&lt;li&gt;Giant size 26-oz box of Kellogg's cereal&lt;/li&gt;&lt;li&gt;Natural fruit flavors&lt;/li&gt;&lt;li&gt;Kosher cereal&lt;/li&gt;&lt;/ul&gt;",
+        "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-c6b3/k2-_e7cb63de-f177-4205-9e69-2c80b7cc1f77.v1.jpg",
+        "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-eb6d/k2-_8ee07746-633d-45af-bbe8-59aba842fce7.v1.jpg",
+        "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-1f15/k2-_67afbcc3-a15d-4881-90da-dc7fbd09449e.v2.jpg",
+        "productTrackingUrl": "http://linksynergy.walmart.com/fs-bin/click?id=|LSNID|&offerid=223073.7200&type=14&catid=8&subid=0&hid=7200&tmpid=1082&RD_PARM1=http%253A%252F%252Fwww.walmart.com%252Fip%252FKellogg-s-Froot-Loops-Cereal-26-oz%252F25875663%253Faffp1%253D2uiMp4TqucDm41BD9WHhD5b35xU6OuWlkv5w9YjCVg8%2526affilsrc%253Dapi",
+        "standardShipRate": 4.97,
+        "marketplace": false,
+        "modelNumber": "3800093766",
+        "productUrl": "http://c.affil.walmart.com/t/api02?l=http%3A%2F%2Fwww.walmart.com%2Fip%2FKellogg-s-Froot-Loops-Cereal-26-oz%2F25875663%3Faffp1%3D2uiMp4TqucDm41BD9WHhD5b35xU6OuWlkv5w9YjCVg8%26affilsrc%3Dapi%26veh%3Daff%26wmlspartner%3Dreadonlyapi",
+        "customerRating": "4.722",
+        "numReviews": 72,
+        "customerRatingImage": "http://i2.walmartimages.com/i/CustRating/4_7.gif",
+        "categoryNode": "976759_976783_1001339",
+        "bundle": false,
+        "addToCartUrl": "http://c.affil.walmart.com/t/api02?l=http%3A%2F%2Faffil.walmart.com%2Fcart%2FaddToCart%3Fitems%3D25875663%7C1%26affp1%3D2uiMp4TqucDm41BD9WHhD5b35xU6OuWlkv5w9YjCVg8%26affilsrc%3Dapi%26veh%3Daff%26wmlspartner%3Dreadonlyapi",
+        "affiliateAddToCartUrl": "http://linksynergy.walmart.com/fs-bin/click?id=|LSNID|&offerid=223073.7200&type=14&catid=8&subid=0&hid=7200&tmpid=1082&RD_PARM1=http%253A%252F%252Faffil.walmart.com%252Fcart%252FaddToCart%253Fitems%253D25875663%257C1%2526affp1%253D2uiMp4TqucDm41BD9WHhD5b35xU6OuWlkv5w9YjCVg8%2526affilsrc%253Dapi",
+        "giftOptions": {
+            "allowGiftWrap": false,
+            "allowGiftMessage": false,
+            "allowGiftReceipt": false
+        },
+        "imageEntities": [{
+            "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-c6b3/k2-_e7cb63de-f177-4205-9e69-2c80b7cc1f77.v1.jpg",
+            "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-eb6d/k2-_8ee07746-633d-45af-bbe8-59aba842fce7.v1.jpg",
+            "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-1f15/k2-_67afbcc3-a15d-4881-90da-dc7fbd09449e.v2.jpg",
+            "entityType": "PRIMARY"
+        }],
+        "availableOnline": true
+    }, {
+        "itemId": 34201711,
+        "parentItemId": 34201711,
+        "name": "Reese's Puffs Cereal, 28.2 oz",
+        "salePrice": 4.59,
+        "upc": "016000484528",
+        "categoryPath": "Food/Breakfast & Cereal/All Cereal",
+        "shortDescription": "&lt;p&gt;Get your mornings off to a good start with Reese's Puffs Cereal, a smart breakfast choice. It is packed with delicious coco and peanut butter, sweet and crunchy flavor as well as 13 vitamins and minerals. This 28.2-oz whole grain cereal gives you nearly a quarter of the recommended daily intake of whole grain.&lt;/p&gt;",
+        "longDescription": "&lt;b&gt;Reese's Puffs Cereal:&lt;/b&gt;&lt;ul&gt;&lt;li&gt;Hershey's cocoa and Reese's Peanut Butter with sweet and crunchy corn puffs&lt;/li&gt;&lt;li&gt;11g whole grain per serving (at least 48 g recommended daily)&lt;/li&gt;&lt;li&gt;Whole grain is the first ingredient&lt;/li&gt;&lt;li&gt;120 calories per serving&lt;/li&gt;&lt;li&gt;Provides 13 vitamins and minerals&lt;/li&gt;&lt;li&gt;Kosher cereal&lt;/li&gt;&lt;/ul&gt;",
+        "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-24b8/k2-_a66ea09e-08b4-494b-84e0-6e311c11cebc.v1.jpg",
+        "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-a9d4/k2-_989bb5bf-2a31-4f01-b22b-8294ea02173c.v1.jpg",
+        "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-eb6c/k2-_4c708e65-cd07-4f31-a732-ff5be687e547.v1.jpg",
+        "productTrackingUrl": "http://linksynergy.walmart.com/fs-bin/click?id=|LSNID|&offerid=223073.7200&type=14&catid=8&subid=0&hid=7200&tmpid=1082&RD_PARM1=http%253A%252F%252Fwww.walmart.com%252Fip%252FReese-s-Puffs-Cereal-28.2-oz%252F34201711%253Faffp1%253D2uiMp4TqucDm41BD9WHhD5b35xU6OuWlkv5w9YjCVg8%2526affilsrc%253Dapi",
+        "standardShipRate": 4.97,
+        "marketplace": false,
+        "modelNumber": "48452",
+        "productUrl": "http://c.affil.walmart.com/t/api02?l=http%3A%2F%2Fwww.walmart.com%2Fip%2FReese-s-Puffs-Cereal-28.2-oz%2F34201711%3Faffp1%3D2uiMp4TqucDm41BD9WHhD5b35xU6OuWlkv5w9YjCVg8%26affilsrc%3Dapi%26veh%3Daff%26wmlspartner%3Dreadonlyapi",
+        "customerRating": "4.6",
+        "numReviews": 24,
+        "customerRatingImage": "http://i2.walmartimages.com/i/CustRating/4_6.gif",
+        "categoryNode": "976759_976783_1001339",
+        "bundle": false,
+        "addToCartUrl": "http://c.affil.walmart.com/t/api02?l=http%3A%2F%2Faffil.walmart.com%2Fcart%2FaddToCart%3Fitems%3D34201711%7C1%26affp1%3D2uiMp4TqucDm41BD9WHhD5b35xU6OuWlkv5w9YjCVg8%26affilsrc%3Dapi%26veh%3Daff%26wmlspartner%3Dreadonlyapi",
+        "affiliateAddToCartUrl": "http://linksynergy.walmart.com/fs-bin/click?id=|LSNID|&offerid=223073.7200&type=14&catid=8&subid=0&hid=7200&tmpid=1082&RD_PARM1=http%253A%252F%252Faffil.walmart.com%252Fcart%252FaddToCart%253Fitems%253D34201711%257C1%2526affp1%253D2uiMp4TqucDm41BD9WHhD5b35xU6OuWlkv5w9YjCVg8%2526affilsrc%253Dapi",
+        "giftOptions": {
+            "allowGiftWrap": false,
+            "allowGiftMessage": false,
+            "allowGiftReceipt": false
+        },
+        "imageEntities": [{
+            "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-e431/k2-_71d5ee15-5565-4f2f-8978-4693a1083506.v1.jpg?odnHeight=180&odnWidth=180",
+            "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-e431/k2-_71d5ee15-5565-4f2f-8978-4693a1083506.v1.jpg?odnHeight=450&odnWidth=450",
+            "entityType": "SECONDARY"
+        }, {
+            "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-2c42/k2-_c671103c-9dfb-4ba9-b9ba-04a46eebc3ef.v1.jpg",
+            "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-912a/k2-_6f4663ff-08ef-4279-9ac3-a60c661e98e9.v1.jpg",
+            "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-fb9f/k2-_24a50ac4-b284-4c5c-bf52-23a6f80060e6.v1.jpg",
+            "entityType": "SECONDARY"
+        }, {
+            "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-90ce/k2-_230b3645-ed4c-4b06-a548-20787f6b3c4d.v1.jpg",
+            "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-b940/k2-_af35a5a3-dfef-4ed8-aeb1-0d1643a9fe14.v1.jpg",
+            "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-3c29/k2-_c2a69849-ab36-4c51-89a5-b0b5e18c8c45.v1.jpg",
+            "entityType": "SECONDARY"
+        }, {
+            "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-24b8/k2-_a66ea09e-08b4-494b-84e0-6e311c11cebc.v1.jpg",
+            "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-a9d4/k2-_989bb5bf-2a31-4f01-b22b-8294ea02173c.v1.jpg",
+            "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-eb6c/k2-_4c708e65-cd07-4f31-a732-ff5be687e547.v1.jpg",
+            "entityType": "PRIMARY"
+        }, {
+            "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-12cc/k2-_91e7ad97-e6ef-42c1-a869-62f9a58ebb14.v1.jpg",
+            "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-b7e4/k2-_60f199d6-2b5c-40d1-9a3e-3fb98905becc.v1.jpg",
+            "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-840a/k2-_9a05d3d1-00f9-4dfb-ae41-de45ac12dee8.v1.jpg",
+            "entityType": "SECONDARY"
+        }, {
+            "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-4437/k2-_1dc21cb6-bfbc-4ca2-898f-28984235bfee.v1.jpg",
+            "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-5288/k2-_2156ac84-7057-40b4-9847-d0fa727fc2b6.v1.jpg",
+            "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-952d/k2-_2c8b3d84-9ca9-4903-82c3-f0384d2c01c3.v1.jpg",
+            "entityType": "SECONDARY"
+        }],
+        "availableOnline": true
+    }, {
+        "itemId": 22356624,
+        "parentItemId": 22356624,
+        "name": "Kellogg's Special K Red Berries Cereal, 11.2 oz",
+        "salePrice": 3.13,
+        "upc": "038000599231",
+        "categoryPath": "Food/Breakfast & Cereal/All Cereal",
+        "shortDescription": "&lt;p&gt;Good news: Kellogg's Special K Red Berries Cereal just got red berrier! Now with more real strawberries, it's the berry-licious taste you want with the fiber and whole grains your body needs.&lt;/p&gt;",
+        "longDescription": "&lt;b&gt;Kellogg's Special K Red Berries Cereal:&lt;/b&gt;&lt;ul&gt;&lt;li&gt;Now with more real strawberries&lt;/li&gt;&lt;li&gt;Whole grain stamp: 8g or more per serving&lt;/li&gt;&lt;li&gt;Kosher&lt;/li&gt;&lt;/ul&gt;",
+        "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-e475/k2-_cd078de1-0860-48e0-b3c1-d55e51f43440.v3.jpg",
+        "productTrackingUrl": "http://linksynergy.walmart.com/fs-bin/click?id=|LSNID|&offerid=223073.7200&type=14&catid=8&subid=0&hid=7200&tmpid=1082&RD_PARM1=http%253A%252F%252Fwww.walmart.com%252Fip%252FKLG-SPK-RB-11.2%252F22356624%253Faffp1%253D2uiMp4TqucDm41BD9WHhD5b35xU6OuWlkv5w9YjCVg8%2526affilsrc%253Dapi",
+        "standardShipRate": 4.97,
+        "marketplace": false,
+        "modelNumber": "3800059922",
+        "productUrl": "http://c.affil.walmart.com/t/api02?l=http%3A%2F%2Fwww.walmart.com%2Fip%2FKLG-SPK-RB-11.2%2F22356624%3Faffp1%3D2uiMp4TqucDm41BD9WHhD5b35xU6OuWlkv5w9YjCVg8%26affilsrc%3Dapi%26veh%3Daff%26wmlspartner%3Dreadonlyapi",
+        "customerRating": "4.801",
+        "numReviews": 266,
+        "customerRatingImage": "http://i2.walmartimages.com/i/CustRating/4_8.gif",
+        "categoryNode": "976759_976783_1001339",
+        "bundle": false,
+        "addToCartUrl": "http://c.affil.walmart.com/t/api02?l=http%3A%2F%2Faffil.walmart.com%2Fcart%2FaddToCart%3Fitems%3D22356624%7C1%26affp1%3D2uiMp4TqucDm41BD9WHhD5b35xU6OuWlkv5w9YjCVg8%26affilsrc%3Dapi%26veh%3Daff%26wmlspartner%3Dreadonlyapi",
+        "affiliateAddToCartUrl": "http://linksynergy.walmart.com/fs-bin/click?id=|LSNID|&offerid=223073.7200&type=14&catid=8&subid=0&hid=7200&tmpid=1082&RD_PARM1=http%253A%252F%252Faffil.walmart.com%252Fcart%252FaddToCart%253Fitems%253D22356624%257C1%2526affp1%253D2uiMp4TqucDm41BD9WHhD5b35xU6OuWlkv5w9YjCVg8%2526affilsrc%253Dapi",
+        "giftOptions": {
+            "allowGiftWrap": false,
+            "allowGiftMessage": false,
+            "allowGiftReceipt": false
+        },
+        "imageEntities": [{
+            "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-66d2/k2-_96625297-8ff4-469c-bc53-cff7fb37754b.v1.jpg",
+            "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-630e/k2-_73235112-1678-4fb8-a2dd-71df065623be.v1.jpg",
+            "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-d4d8/k2-_f302f907-0e99-4fe8-89c2-269d2ba289f5.v1.jpg",
+            "entityType": "SECONDARY"
+        }],
+        "availableOnline": true
+    }, {
+        "itemId": 33886599,
+        "parentItemId": 33886599,
+        "name": "Cheerios Family Size Gluten Free Cereal, 21 oz",
+        "salePrice": 3.98,
+        "upc": "016000476080",
+        "categoryPath": "Food/Breakfast & Cereal/All Cereal",
+        "shortDescription": "&lt;p&gt;Cheerios Family Size Gluten Free Cereal contains 23 grams of whole grain per serving. At least 48 grams are recommended daily. A whole grain food is made by using all three parts of the grain. All General Mills Big G cereals contain more whole grain than any other single ingredient. Same Cheerios, simply gluten free. The taste you love has always come from oats that are naturally gluten free. We're simply making sure they stay that way. When Phil, a member of the Cheerios team for over 50 years, found out his daughter-in-law couldn't eat gluten, he knew his team had to find a way to make sure every family could share breakfast together. We know there are lots of families out there who don't want to let dietary restrictions get in the way of time together. Now that Cheerios are gluten free, more families than ever can sit down to share breakfast, and we couldn't be happier. After all, bringing families together around the breakfast table is exactly why we're here.&lt;/p&gt;",
+        "longDescription": "&lt;b&gt;Cheerios Family Size Gluten Free Cereal:&lt;/b&gt;&lt;ul&gt;&lt;li&gt;Made with 100% whole grain oats&lt;/li&gt;&lt;li&gt;Can help lower cholesterol as part of a heart healthy diet (Three grams of soluble fiber daily from whole grain oat foods, like Cheerios Cereal, in a diet low in saturated fat and cholesterol, may reduce the risk of heart disease. Cheerios Cereal provides 1 gram per serving.)&lt;/li&gt;&lt;li&gt;1 gram of sugar&lt;/li&gt;&lt;li&gt;Not made with genetically modified ingredients (Trace amounts of genetically modified [also known as &quot;genetically engineered&quot;] material may be present due to potential cross contact during manufacturing and shipping.)&lt;/li&gt;&lt;li&gt;Simply gluten free&lt;/li&gt;&lt;li&gt;No artificial flavors&lt;/li&gt;&lt;li&gt;No artificial colors&lt;/li&gt;&lt;/ul&gt;",
+        "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-a7e1/k2-_dc864bf2-e42a-4d3f-9422-522055bfb324.v3.jpg",
+        "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-fd1b/k2-_64e18b0d-a44c-464f-84b9-7a9bc8d146e8.v3.jpg",
+        "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-b87d/k2-_b97ba71c-0cee-40e0-b19a-85ba3385fc0c.v3.jpg",
+        "productTrackingUrl": "http://linksynergy.walmart.com/fs-bin/click?id=|LSNID|&offerid=223073.7200&type=14&catid=8&subid=0&hid=7200&tmpid=1082&RD_PARM1=http%253A%252F%252Fwww.walmart.com%252Fip%252FCheerios-Family-Size-Gluten-Free-Cereal-21-oz%252F33886599%253Faffp1%253D2uiMp4TqucDm41BD9WHhD5b35xU6OuWlkv5w9YjCVg8%2526affilsrc%253Dapi",
+        "standardShipRate": 4.97,
+        "marketplace": false,
+        "modelNumber": "47608",
+        "productUrl": "http://c.affil.walmart.com/t/api02?l=http%3A%2F%2Fwww.walmart.com%2Fip%2FCheerios-Family-Size-Gluten-Free-Cereal-21-oz%2F33886599%3Faffp1%3D2uiMp4TqucDm41BD9WHhD5b35xU6OuWlkv5w9YjCVg8%26affilsrc%3Dapi%26veh%3Daff%26wmlspartner%3Dreadonlyapi",
+        "customerRating": "4.746",
+        "numReviews": 59,
+        "customerRatingImage": "http://i2.walmartimages.com/i/CustRating/4_7.gif",
+        "categoryNode": "976759_976783_1001339",
+        "bundle": false,
+        "addToCartUrl": "http://c.affil.walmart.com/t/api02?l=http%3A%2F%2Faffil.walmart.com%2Fcart%2FaddToCart%3Fitems%3D33886599%7C1%26affp1%3D2uiMp4TqucDm41BD9WHhD5b35xU6OuWlkv5w9YjCVg8%26affilsrc%3Dapi%26veh%3Daff%26wmlspartner%3Dreadonlyapi",
+        "affiliateAddToCartUrl": "http://linksynergy.walmart.com/fs-bin/click?id=|LSNID|&offerid=223073.7200&type=14&catid=8&subid=0&hid=7200&tmpid=1082&RD_PARM1=http%253A%252F%252Faffil.walmart.com%252Fcart%252FaddToCart%253Fitems%253D33886599%257C1%2526affp1%253D2uiMp4TqucDm41BD9WHhD5b35xU6OuWlkv5w9YjCVg8%2526affilsrc%253Dapi",
+        "giftOptions": {
+            "allowGiftWrap": false,
+            "allowGiftMessage": false,
+            "allowGiftReceipt": false
+        },
+        "imageEntities": [{
+            "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-50cb/k2-_cf107e7f-21c7-4698-95fd-5c514cf3c8a2.v1.jpg",
+            "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-cbcc/k2-_818a1dea-77c8-4d10-9b99-7c6812994d5d.v1.jpg",
+            "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-94b5/k2-_0cbbb484-a6c2-4068-8e31-7704d3549c7b.v1.jpg",
+            "entityType": "SECONDARY"
+        }, {
+            "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-4c25/k2-_bcacfe22-fc4b-48c1-9e05-48a8e5af1160.v1.jpg",
+            "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-69d4/k2-_2f42899c-1ade-4f25-a645-21c1aaa2bbad.v1.jpg",
+            "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-70fa/k2-_d34683e6-d216-4003-bf2b-4a672ea3d542.v1.jpg",
+            "entityType": "SECONDARY"
+        }, {
+            "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-a7e1/k2-_dc864bf2-e42a-4d3f-9422-522055bfb324.v3.jpg",
+            "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-fd1b/k2-_64e18b0d-a44c-464f-84b9-7a9bc8d146e8.v3.jpg",
+            "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-b87d/k2-_b97ba71c-0cee-40e0-b19a-85ba3385fc0c.v3.jpg",
+            "entityType": "PRIMARY"
+        }, {
+            "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-fbb3/k2-_71c77c4b-1d4b-49a9-b0ba-38d5cb774ffc.v1.jpg",
+            "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-be1d/k2-_d1ace536-5d38-43a7-a754-8d077ca0abb0.v1.jpg",
+            "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-6a5c/k2-_c0632e17-df13-461f-ba39-82c2e0b8438e.v1.jpg",
+            "entityType": "SECONDARY"
+        }, {
+            "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-1af1/k2-_30170f7f-b10d-4e3f-996e-d1c2fca261e4.v1.jpg",
+            "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-cebf/k2-_23bf7d78-0786-4652-94d9-0b713530ed74.v1.jpg",
+            "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-ac96/k2-_5c04ed66-71f7-4c2f-8037-fa8a26eee30e.v1.jpg",
+            "entityType": "SECONDARY"
+        }, {
+            "thumbnailImage": "http://i5.walmartimages.com/dfw/dce07b8c-43cf/k2-_15535139-9cca-443f-af11-6ae04574c64e.v1.jpg",
+            "mediumImage": "http://i5.walmartimages.com/dfw/dce07b8c-7574/k2-_b153bd5a-189e-44f5-acf4-51e8c30b0546.v1.jpg",
+            "largeImage": "http://i5.walmartimages.com/dfw/dce07b8c-e925/k2-_274b611d-eebb-441f-bae2-05f465ae0ca5.v1.jpg",
+            "entityType": "SECONDARY"
+        }],
+        "availableOnline": true
+    }],
+    "facets": []
+}
