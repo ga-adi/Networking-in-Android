@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     Button mCereal;
     Button mTea;
     Button mChocolate;
+    private WalmartAsyncTask mWalmartAsync;
     ListView mListview;
     ArrayList<String> mArrayList;
     ArrayAdapter<String> mAdapter;
@@ -45,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         mListview=(ListView)findViewById(R.id.listView);
         mAdapter= new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,mArrayList);
         mListview.setAdapter(mAdapter);
+        mWalmartAsync= new WalmartAsyncTask();
 
         mTea=(Button)findViewById(R.id.tea);
         mCereal=(Button)findViewById(R.id.cereal);
@@ -53,14 +55,20 @@ public class MainActivity extends AppCompatActivity {
         mTea.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                WalmartAsyncTask walmartAsyncTask= new WalmartAsyncTask();
-                walmartAsyncTask.execute(urlTea);
+                if(mWalmartAsync.getStatus()==AsyncTask.Status.RUNNING){
+                    mWalmartAsync.cancel(true);
+                }
+                mWalmartAsync= new WalmartAsyncTask();
+                mWalmartAsync.execute(urlTea);
             }
         });
 
         mCereal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(mWalmartAsync.getStatus()==AsyncTask.Status.RUNNING){
+                    mWalmartAsync.cancel(true);
+                }
                 WalmartAsyncTask walmartAsyncTask= new WalmartAsyncTask();
                 walmartAsyncTask.execute(urlCereal);
             }
@@ -69,6 +77,9 @@ public class MainActivity extends AppCompatActivity {
         mChocolate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(mWalmartAsync.getStatus()==AsyncTask.Status.RUNNING){
+                    mWalmartAsync.cancel(true);
+                }
                 WalmartAsyncTask walmartAsyncTask= new WalmartAsyncTask();
                 walmartAsyncTask.execute(urlChoc);
             }
