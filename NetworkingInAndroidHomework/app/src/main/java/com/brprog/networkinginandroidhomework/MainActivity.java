@@ -1,5 +1,8 @@
 package com.brprog.networkinginandroidhomework;
 
+import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +10,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -52,27 +56,37 @@ public class MainActivity extends AppCompatActivity {
         mCerealButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DownloadAsyncTask task = new DownloadAsyncTask();
-                task.execute(mAllCerealUrlString);
+                doGetRequest(R.string.all_cereal_query, R.string.all_cereal_id);
             }
         });
 
         mChocolateButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DownloadAsyncTask task = new DownloadAsyncTask();
-                task.execute(mChocolateUrlString);
+                doGetRequest(R.string.chocolate_query, R.string.chocolate_id);
             }
         });
 
         mTeaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DownloadAsyncTask task = new DownloadAsyncTask();
-                task.execute(mTeaUrlString);
+                doGetRequest(R.string.tea_query, R.string.tea_id);
             }
         });
 
+    }
+
+    protected void doGetRequest(int query, int taxonomyId) {
+        ConnectivityManager connMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
+        if (networkInfo != null && networkInfo.isConnected()) {
+            DownloadAsyncTask walmartTask = new DownloadAsyncTask();
+            walmartTask.execute("http://api.walmartlabs.com/v1/search?query=" + getString(query)
+                    + "&format=json&categoryId=" + getString(taxonomyId)
+                    + "&apiKey=" + getString(R.string.api_key));
+        } else {
+            Toast.makeText(MainActivity.this, "Unable to connect to IT services", Toast.LENGTH_SHORT).show();
+        }
     }
 
     private String getInputData(InputStream inStream) throws IOException {
@@ -122,7 +136,6 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(String data) {
             super.onPostExecute(data);
-
             mProductsAdapter.notifyDataSetChanged();
 
         }
