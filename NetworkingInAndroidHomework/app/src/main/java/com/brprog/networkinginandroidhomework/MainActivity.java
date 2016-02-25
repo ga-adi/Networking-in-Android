@@ -23,16 +23,15 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     private String mApiKey = "av3vuutdbxvyfbymb22sgaqg";
-    private String mAllCerealUrlString = "http://api.walmartlabs.com/v1/search?query=all+cereal&format=json&nojsoncallback=1&categoryId=976759_976783_1001339&apiKey=av3vuutdbxvyfbymb22sgaqg";
-
+    private String mAllCerealUrlString = "http://api.walmartlabs.com/v1/search?query=all+cereal&format=json&categoryId=976759_976783_1001339&apiKey=av3vuutdbxvyfbymb22sgaqg";
+    private String mChocolateUrlString = "http://api.walmartlabs.com/v1/search?query=chocolate&format=json&categoryId=976759_1096070_1224976&apiKey=av3vuutdbxvyfbymb22sgaqg";
+    private String mTeaUrlString = "http://api.walmartlabs.com/v1/search?query=tea&format=json&categoryId=976759_976782_1001320&apiKey=av3vuutdbxvyfbymb22sgaqg";
 
     Button mCerealButton;
     Button mChocolateButton;
     Button mTeaButton;
     ListView mProductsListView;
-    ArrayList<String> mCerealArrayList;
-    ArrayList<String> mChocolateArrayList;
-    ArrayList<String> mTeaArrayList;
+    ArrayList<String> mWalmartArrayList;
     ArrayAdapter<String> mProductsAdapter;
 
 
@@ -45,8 +44,8 @@ public class MainActivity extends AppCompatActivity {
         mChocolateButton = (Button)findViewById(R.id.chocolate_button);
         mTeaButton = (Button)findViewById(R.id.tea_button);
         mProductsListView = (ListView)findViewById(R.id.products_listview);
-        mCerealArrayList = new ArrayList<>();
-        mProductsAdapter = new ArrayAdapter<String>(MainActivity.this, android.R.layout.simple_list_item_1, mCerealArrayList);
+        mWalmartArrayList = new ArrayList<>();
+        mProductsAdapter = new ArrayAdapter<String>(MainActivity.this, android.R.layout.simple_list_item_1, mWalmartArrayList);
         mProductsListView.setAdapter(mProductsAdapter);
 
 
@@ -58,21 +57,21 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-//        mChocolateButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                mProductsAdapter = new ArrayAdapter<String>(MainActivity.this, android.R.layout.simple_list_item_1, mChocolateArrayList);
-//                mProductsListView.setAdapter(mProductsAdapter);
-//            }
-//        });
-//
-//        mTeaButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                mProductsAdapter = new ArrayAdapter<String>(MainActivity.this, android.R.layout.simple_list_item_1, mTeaArrayList);
-//                mProductsListView.setAdapter(mProductsAdapter);
-//            }
-//        });
+        mChocolateButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DownloadAsyncTask task = new DownloadAsyncTask();
+                task.execute(mChocolateUrlString);
+            }
+        });
+
+        mTeaButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DownloadAsyncTask task = new DownloadAsyncTask();
+                task.execute(mTeaUrlString);
+            }
+        });
 
     }
 
@@ -108,11 +107,11 @@ public class MainActivity extends AppCompatActivity {
             try {
                 JSONObject dataObject = new JSONObject(data);
                 JSONArray itemsJSONArray = dataObject.getJSONArray("items");
-                mCerealArrayList.clear();
+                mWalmartArrayList.clear();
                 for (int i =0; i < itemsJSONArray.length(); i++) {
                     JSONObject object = itemsJSONArray.optJSONObject(i);
                     String name = object.optString("name");
-                    mCerealArrayList.add(name);
+                    mWalmartArrayList.add(name);
                 }
             } catch (JSONException e) {
                 e.printStackTrace();
