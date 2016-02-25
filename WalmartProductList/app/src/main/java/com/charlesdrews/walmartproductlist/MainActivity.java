@@ -1,5 +1,7 @@
 package com.charlesdrews.walmartproductlist;
 
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -14,6 +16,7 @@ import android.view.MenuItem;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -31,27 +34,32 @@ import java.net.URL;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    private static String WALMART_API_KEY = "6z2n6d5hb74x4eyxxr98km39";
-    private static String WALMART_API_ENDPOINT = "http://api.walmartlabs.com/v1/search";
+    private static final String WALMART_API_KEY = "6z2n6d5hb74x4eyxxr98km39";
+    private static final String WALMART_API_ENDPOINT = "http://api.walmartlabs.com/v1/search";
+    private static final String REQUEST_TYPE = "GET";
+    private static final String JSON_KEY_ITEMS = "items";
+    private static final String JSON_KEY_NAME = "name";
+    private static final String JSON_KEY_PRICE = "salePrice";
 
     // http://api.walmartlabs.com/v1/search?query=tea&format=json&categoryId=976759_976782_1001320&apiKey=6z2n6d5hb74x4eyxxr98km39
-    private static String QUERY_KEY = "query";
-    private static String FORMAT_KEY_AND_VALUE = "format=json";
-    private static String API_KEY_KEY = "apiKey";
-    private static String CATEGORY_ID_KEY = "categoryId";
+    private static final String QUERY_KEY = "query";
+    private static final String FORMAT_KEY_AND_VALUE = "format=json";
+    private static final String API_KEY_KEY = "apiKey";
+    private static final String CATEGORY_ID_KEY = "categoryId";
 
-    private static String TEA_QUERY = "tea";
-    private static String CHOCOLATE_QUERY = "chocolate";
-    private static String CEREAL_QUERY = "cereal";
+    private static final String TEA_QUERY = "tea";
+    private static final String CHOCOLATE_QUERY = "chocolate";
+    private static final String CEREAL_QUERY = "cereal";
 
     // http://api.walmartlabs.com/v1/taxonomy?format=json&apiKey=6z2n6d5hb74x4eyxxr98km39
-    private static String TEA_CLASS_ID = "976759_976782_1001320";
-    private static String CHOCOLATE_CLASS_ID = "976759_1096070_1224976";
-    private static String CEREAL_CLASS_ID = "976759_976783_1001339";
+    private static final String TEA_CLASS_ID = "976759_976782_1001320";
+    private static final String CHOCOLATE_CLASS_ID = "976759_1096070_1224976";
+    private static final String CEREAL_CLASS_ID = "976759_976783_1001339";
 
     private ArrayList<WalmartItem> mItems;
     private ArrayAdapter<WalmartItem> mAdapter;
     private GetWalmartItemsAsyncTask mTask;
+    private ProgressBar mProgressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,6 +75,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.cereal_button).setOnClickListener(MainActivity.this);
         findViewById(R.id.chocolate_button).setOnClickListener(MainActivity.this);
         findViewById(R.id.tea_button).setOnClickListener(MainActivity.this);
+
+        mProgressBar = (ProgressBar) findViewById(R.id.progress_bar);
     }
 
     @Override
@@ -116,6 +126,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         private String mErrorMessage;
 
         @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            mProgressBar.animate()
+                    .alpha(1f)
+                    .setDuration(1000)
+                    .setListener(new AnimatorListenerAdapter() {
+                        @Override
+                        public void onAnimationStart(Animator animation) {
+                            super.onAnimationStart(animation);
+                            mProgressBar.setAlpha(0f);
+                            mProgressBar.setVisibility(View.VISIBLE);
+                        }
+                    });
+        }
+
+        @Override
         protected Void doInBackground(String... params) {
             if (params.length < 2) {
                 mErrorMessage = "Too few arguments provided to perform API call";
@@ -140,7 +166,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     URL url = new URL(urlString);
 
                     HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-                    connection.setRequestMethod("GET");
+                    connection.setRequestMethod(REQUEST_TYPE);
                     connection.setDoInput(true);
                     connection.connect();
 
@@ -149,11 +175,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     inputStream.close();
 
                     JSONObject parentJsonObject = new JSONObject(dataString);
-                    JSONArray jsonArray = parentJsonObject.optJSONArray("items");
+                    JSONArray jsonArray = parentJsonObject.optJSONArray(JSON_KEY_ITEMS);
 
                     for (int i = 0; i < jsonArray.length(); i++) {
                         JSONObject item = jsonArray.optJSONObject(i);
-                        mItems.add(new WalmartItem(item.optString("name"), item.optDouble("salePrice")));
+                        mItems.add(new WalmartItem(item.optString(JSON_KEY_NAME), item.optDouble(JSON_KEY_PRICE)));
                     }
 
                     return null;
@@ -192,6 +218,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
 
             mAdapter.notifyDataSetChanged();
+
+            mProgressBar.animate()
+                    .alpha(0f)
+                    .setDuration(500)
+                    .setListener(new AnimatorListenerAdapter() {
+                         @Override
+                         public void onAnimationEnd(Animator animation) {
+                             super.onAnimationEnd(animation);
+                             mProgressBar.setVisibility(View.GONE);
+                         }
+                     });
         }
 
         private String getStringFromInputStream(InputStream stream) throws IOException {
@@ -234,7 +271,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             WalmartItem item = mItems.get(position);
             ((TextView) convertView.findViewById(R.id.item_name)).setText(item.getName());
-            ((TextView) convertView.findViewById(R.id.item_price)).setText("$" + item.getPrice());
+            ((TextView) convertView.findViewById(R.id.item_price))
+                    .setText(String.format("$%,.2f", item.getPrice()));
 
             return convertView;
         }
