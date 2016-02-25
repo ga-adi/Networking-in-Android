@@ -30,7 +30,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private static String WALMART_API_KEY = "6z2n6d5hb74x4eyxxr98km39";
     private static String WALMART_API_ENDPOINT = "http://api.walmartlabs.com/v1/search";
 
@@ -51,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
 
     private ArrayList<WalmartItem> mItems;
     private ArrayAdapter<WalmartItem> mAdapter;
+    private GetWalmartItemsAsyncTask mTask;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,30 +64,36 @@ public class MainActivity extends AppCompatActivity {
         mAdapter = new WalmartArrayAdapter();
         ((ListView) findViewById(R.id.list_view)).setAdapter(mAdapter);
 
-        findViewById(R.id.cereal_button).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                GetWalmartItemsAsyncTask task = new GetWalmartItemsAsyncTask();
-                task.execute(CEREAL_QUERY, CEREAL_CLASS_ID);
-            }
-        });
-
-        findViewById(R.id.chocolate_button).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                GetWalmartItemsAsyncTask task = new GetWalmartItemsAsyncTask();
-                task.execute(CHOCOLATE_QUERY, CHOCOLATE_CLASS_ID);
-            }
-        });
-
-        findViewById(R.id.tea_button).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                GetWalmartItemsAsyncTask task = new GetWalmartItemsAsyncTask();
-                task.execute(TEA_QUERY, TEA_CLASS_ID);
-            }
-        });
+        findViewById(R.id.cereal_button).setOnClickListener(MainActivity.this);
+        findViewById(R.id.chocolate_button).setOnClickListener(MainActivity.this);
+        findViewById(R.id.tea_button).setOnClickListener(MainActivity.this);
     }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.cereal_button:
+                startWalmartAsyncTask(CEREAL_QUERY, CEREAL_CLASS_ID);
+                break;
+            case R.id.chocolate_button:
+                startWalmartAsyncTask(CHOCOLATE_QUERY, CHOCOLATE_CLASS_ID);
+                break;
+            case R.id.tea_button:
+                startWalmartAsyncTask(TEA_QUERY, TEA_CLASS_ID);
+                break;
+            default:
+                break;
+        }
+    }
+
+    private void startWalmartAsyncTask(String query, String categoryId) {
+        if (mTask != null && mTask.getStatus() != AsyncTask.Status.FINISHED) {
+            mTask.cancel(true);
+        }
+        mTask = new GetWalmartItemsAsyncTask();
+        mTask.execute(query, categoryId);
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
