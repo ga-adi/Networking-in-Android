@@ -6,6 +6,7 @@ import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -30,10 +31,10 @@ public class MainActivity extends AppCompatActivity {
     private ProgressBar mProgressBar;
     private ArrayList<String> mArrayList;
     private ArrayAdapter<String> mArrayAdapter;
-//    public ItemAsyncTask chocolateAsyncTask,teaAsyncTask, cerealAsyncTask;
-    public String cerealURL = "http://api.walmartlabs.com/v1/search?query=cereal&format=json&apiKey=hkx9q4hya6s2mq4ts79jmtd5";
-    public String chocolateURL = "http://api.walmartlabs.com/v1/search?query=chocolate&format=json&apiKey=hkx9q4hya6s2mq4ts79jmtd5";
-    public String teaURL = "http://api.walmartlabs.com/v1/search?query=tea&format=json&apiKey=hkx9q4hya6s2mq4ts79jmtd5";
+    private String cerealURL = "http://api.walmartlabs.com/v1/search?query=cereal&format=json&apiKey=hkx9q4hya6s2mq4ts79jmtd5";
+    private String chocolateURL = "http://api.walmartlabs.com/v1/search?query=chocolate&format=json&apiKey=hkx9q4hya6s2mq4ts79jmtd5";
+    private String teaURL = "http://api.walmartlabs.com/v1/search?query=tea&format=json&apiKey=hkx9q4hya6s2mq4ts79jmtd5";
+    private ItemAsyncTask mItemAsyncTask;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
         ListView mListView = (ListView) findViewById(R.id.listview);
         mProgressBar = (ProgressBar)findViewById(R.id.progressbar);
         mProgressBar.setVisibility(View.GONE);
+        mItemAsyncTask = new ItemAsyncTask();
 
         mArrayList = new ArrayList<String>();
         mArrayAdapter = new ArrayAdapter<String>(MainActivity.this, android.R.layout.simple_list_item_1, mArrayList);
@@ -60,16 +62,12 @@ public class MainActivity extends AppCompatActivity {
 
                 if (networkInfo != null && networkInfo.isConnected()) {
 
-                    // TODO: Fix crash on cancel. Check if this is only with no connection.
+                    if(mItemAsyncTask.getStatus() == AsyncTask.Status.RUNNING){
+                        mItemAsyncTask.cancel(true);
+                    }
 
-                    ItemAsyncTask chocolateAsyncTask = new ItemAsyncTask();
-                    chocolateAsyncTask.cancel(true);
-
-                    ItemAsyncTask teaAsyncTask = new ItemAsyncTask();
-                    teaAsyncTask.cancel(true);
-
-                    ItemAsyncTask cerealAsyncTask = new ItemAsyncTask();
-                    cerealAsyncTask.execute(cerealURL);
+                    mItemAsyncTask = new ItemAsyncTask();
+                    mItemAsyncTask.execute(cerealURL);
 
                 } else {
                     // the connection is not available
@@ -84,16 +82,12 @@ public class MainActivity extends AppCompatActivity {
 
                 if (networkInfo != null && networkInfo.isConnected()) {
 
-                    // TODO: Fix crash on cancel.
+                    if(mItemAsyncTask.getStatus() == AsyncTask.Status.RUNNING){
+                        mItemAsyncTask.cancel(true);
+                    }
 
-                    ItemAsyncTask teaAsyncTask = new ItemAsyncTask();
-                    teaAsyncTask.cancel(true);
-
-                    ItemAsyncTask cerealAsyncTask = new ItemAsyncTask();
-                    cerealAsyncTask.cancel(true);
-
-                    ItemAsyncTask chocolateAsyncTask = new ItemAsyncTask();
-                    chocolateAsyncTask.execute(chocolateURL);
+                    mItemAsyncTask = new ItemAsyncTask();
+                    mItemAsyncTask.execute(chocolateURL);
 
                 } else {
                     // the connection is not available
@@ -107,16 +101,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 if (networkInfo != null && networkInfo.isConnected()) {
-                    // TODO: Fix crash on cancel.
 
-                    ItemAsyncTask cerealAsyncTask = new ItemAsyncTask();
-                    cerealAsyncTask.cancel(true);
+                    if(mItemAsyncTask.getStatus() == AsyncTask.Status.RUNNING){
+                        mItemAsyncTask.cancel(true);
+                    }
 
-                    ItemAsyncTask chocolateAsyncTask = new ItemAsyncTask();
-                    chocolateAsyncTask.cancel(true);
-
-                    ItemAsyncTask teaAsyncTask = new ItemAsyncTask();
-                    teaAsyncTask.execute(teaURL);
+                    mItemAsyncTask = new ItemAsyncTask();
+                    mItemAsyncTask.execute(teaURL);
 
                 } else {
                     // the connection is not available
@@ -124,149 +115,13 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-
-
-/*
-            mCereal.setOnClickListener(new View.OnClickListener() {
-
-                @Override
-                public void onClick(View v) {
-
-                        if (networkInfo != null && networkInfo.isConnected()) {
-
-                            // TODO: Fix crash on cancel. Check if this is only with no connection.
-
-                            chocolateAsyncTask.cancel(true);
-                            teaAsyncTask.cancel(true);
-                            if (chocolateAsyncTask.isCancelled() || teaAsyncTask.isCancelled()) {
-                                cerealAsyncTask.execute(cerealURL);
-                            } else {
-                                Toast.makeText(MainActivity.this, "Previous task still running", Toast.LENGTH_SHORT).show();
-                            }
-                        } else {
-                            // the connection is not available
-                            Toast.makeText(MainActivity.this, "No connection :(", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                });
-
-            mChocolate.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-
-                        if (networkInfo != null && networkInfo.isConnected()) {
-
-                            // TODO: Fix crash on cancel.
-
-                            teaAsyncTask.cancel(true);
-                            cerealAsyncTask.cancel(true);
-
-                            if (teaAsyncTask.isCancelled() || cerealAsyncTask.isCancelled()) {
-                                chocolateAsyncTask.execute(chocolateURL);
-                            } else {
-                                Toast.makeText(MainActivity.this, "Previous task still running", Toast.LENGTH_SHORT).show();
-                            }
-                        } else {
-                            // the connection is not available
-                            Toast.makeText(MainActivity.this, "No connection :(", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-            });
-
-            mTea.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-
-                    if (networkInfo != null && networkInfo.isConnected()) {
-                        // TODO: Fix crash on cancel.
-                        try {
-                            cerealAsyncTask.cancel(true);
-                        }  catch (Throwable thr) {
-                             thr.printStackTrace();
-                        }
-
-                        try {
-                            chocolateAsyncTask.cancel(true);
-                        }  catch (Throwable thr) {
-                            thr.printStackTrace();
-                        }
-
-                        if (chocolateAsyncTask.isCancelled() || cerealAsyncTask.isCancelled()) {
-                            teaAsyncTask.execute(teaURL);
-                        } else {
-                            Toast.makeText(MainActivity.this, "Previous task still running", Toast.LENGTH_SHORT).show();
-                        }
-                    } else {
-                    // the connection is not available
-                    Toast.makeText(MainActivity.this, "No connection :(", Toast.LENGTH_SHORT).show();
-                    }
-                }
-            });
-
-
-/*
-           mCereal.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-
-                        if (networkInfo != null && networkInfo.isConnected()) {
-                            // TODO: Fix crash on cancel. Error: task has already been executed
-                            itemAsyncTask.cancel(true);
-                            if (itemAsyncTask.isCancelled()) {
-                                itemAsyncTask.execute(cerealURL);
-                            }
-                        } else {
-                            // the connection is not available
-                            Toast.makeText(MainActivity.this, "No connection :(", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                });
-
-            mChocolate.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-
-                        if (networkInfo != null && networkInfo.isConnected()) {
-                            // TODO: Fix crash on cancel.
-                            itemAsyncTask.cancel(true);
-                            if (itemAsyncTask.isCancelled()) {
-                                itemAsyncTask.execute(chocolateURL);
-                            }
-                        } else {
-                            // the connection is not available
-                            Toast.makeText(MainActivity.this, "No connection :(", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-            });
-
-            mTea.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-
-                    if (networkInfo != null && networkInfo.isConnected()) {
-                        // TODO: Fix crash on cancel.
-                        itemAsyncTask.cancel(true);
-                        if (itemAsyncTask.isCancelled()) {
-                            itemAsyncTask.execute(teaURL);
-                        }
-                    } else {
-                    // the connection is not available
-                    Toast.makeText(MainActivity.this, "No connection :(", Toast.LENGTH_SHORT).show();
-                    }
-                }
-            });
-    }
- */
-
-
-
     }
 
     private class ItemAsyncTask extends AsyncTask<String, Void, String>{
         @Override
         protected String doInBackground(String... myUrl) {
             String contentAsString = "";
-            InputStream is = null;
+            InputStream inputStream = null;
             try {
                 URL url = new URL(myUrl[0]);
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
@@ -275,10 +130,10 @@ public class MainActivity extends AppCompatActivity {
 
                 // Starts the query
                 conn.connect();
-                is = conn.getInputStream();
+                inputStream = conn.getInputStream();
 
                 // Converts the InputStream into a string
-                contentAsString = readIt(is);
+                contentAsString = getInputStream(inputStream);
                 return contentAsString;
 
             } catch (Throwable thr) {
@@ -286,16 +141,16 @@ public class MainActivity extends AppCompatActivity {
             }
 
             try {
-                // Get the data inside the JSON object, and the data inside the object's array.
-                JSONObject dataObject = new JSONObject(contentAsString); // Could take no params, or could take the string you want to use.
-                JSONObject cerealObject = dataObject.getJSONObject("query");
-                JSONArray cerealJsonArray = cerealObject.getJSONArray("items"); // Getting the array gets the stuff inside the object.
-
                 mArrayList.clear();
 
+                // Get the data inside the JSON object, and the data inside the object's array.
+                JSONObject dataObject = new JSONObject(contentAsString); // Could take no params, or could take the string you want to use.
+                JSONArray itemJsonArray = dataObject.getJSONArray("items"); // Getting the array gets the stuff inside the object.
+
+
                 // For every object in the item array, add the name to the ArrayList.
-                for (int i = 0; i < cerealJsonArray.length(); i++) {
-                    JSONObject object = cerealJsonArray.optJSONObject(i);
+                for (int i = 0; i < itemJsonArray.length(); i++) {
+                    JSONObject object = itemJsonArray.optJSONObject(i);
                     String name = object.optString("name");
                     mArrayList.add(name);
                 }
@@ -303,9 +158,9 @@ public class MainActivity extends AppCompatActivity {
             } catch (JSONException e) {
                 e.printStackTrace();
             } finally {
-            if (is != null) {
+            if (inputStream != null) {
                 try {
-                    is.close();
+                    inputStream.close();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -324,11 +179,12 @@ public class MainActivity extends AppCompatActivity {
         protected void onPostExecute(String aVoid) {
             super.onPostExecute(aVoid);
             mProgressBar.setVisibility(View.GONE);
+            Log.d("ONPOSTEXECUTE", "Array = " + mArrayList.toString());
             mArrayAdapter.notifyDataSetChanged();
         }
     }
 
-    public String readIt(InputStream stream) throws IOException {
+    public String getInputStream(InputStream stream) throws IOException {
         StringBuilder sb = new StringBuilder();
         BufferedReader br = new BufferedReader(new InputStreamReader(stream));
         String read;
@@ -336,6 +192,8 @@ public class MainActivity extends AppCompatActivity {
         while((read = br.readLine()) != null) {
             sb.append(read);
         }
+
+        br.close();
         return sb.toString();
     }
 
