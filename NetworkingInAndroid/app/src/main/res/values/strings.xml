@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NetworkingInAndroid</string>
+    <string name="format_json"><![CDATA[&format=json]]></string>
+    <string name="api_key"><![CDATA[&apiKey=]]></string>
+</resources>
