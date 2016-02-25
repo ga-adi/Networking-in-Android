@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
                         mTask.cancel(true);
                     }
                     mTask = new WalmartAsyncTask();
-                    query = "cereal";
+                    query = "chocolate";
                     mTask.execute(url+query);
                 } else {
                     Toast.makeText(MainActivity.this, "Please connect to internet", Toast.LENGTH_SHORT).show();
@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
                         mTask.cancel(true);
                     }
                     mTask = new WalmartAsyncTask();
-                    query = "cereal";
+                    query = "tea";
                     mTask.execute(url+query);
                 } else {
                     Toast.makeText(MainActivity.this, "Please connect to internet", Toast.LENGTH_SHORT).show();
