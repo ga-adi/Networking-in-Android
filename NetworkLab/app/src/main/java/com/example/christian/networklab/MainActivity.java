@@ -33,7 +33,8 @@ public class MainActivity extends AppCompatActivity {
     private ListView mListView;
     private Button mCereal;
     private Button mChocolate;
-    private Button mTea
+    private Button mTea;
+    private DownloadAsyncTask downloadAsyncTask;
     ​
     private ArrayList<String> mStringArray;
     private ArrayAdapter<String> mAdapter;
@@ -57,8 +58,9 @@ public class MainActivity extends AppCompatActivity {
         mCereal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                stopAsyncTask();
                 ​
-                DownloadAsyncTask downloadAsyncTask = new DownloadAsyncTask();
+                downloadAsyncTask = new DownloadAsyncTask();
                 ​
                 downloadAsyncTask.execute(urlStringCereal);
 
@@ -68,8 +70,9 @@ public class MainActivity extends AppCompatActivity {
         mChocolate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                stopAsyncTask();
                 ​
-                DownloadAsyncTask downloadAsyncTask = new DownloadAsyncTask();
+                downloadAsyncTask = new DownloadAsyncTask();
                 ​
                 downloadAsyncTask.execute(urlStringChocoloate);
 
@@ -79,13 +82,21 @@ public class MainActivity extends AppCompatActivity {
         mTea.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                stopAsyncTask();
                 ​
-                DownloadAsyncTask downloadAsyncTask = new DownloadAsyncTask();
+                downloadAsyncTask = new DownloadAsyncTask();
                 ​
                 downloadAsyncTask.execute(urlStringTea);
 
             }
         });
+    }
+
+    public void stopAsyncTask () {
+        if (downloadAsyncTask != null && downloadAsyncTask.getStatus() != AsyncTask.Status.FINISHED){
+            downloadAsyncTask.cancel(true);
+        }
     }
     ​
     private String getInputData(InputStream inStream) throws IOException {
