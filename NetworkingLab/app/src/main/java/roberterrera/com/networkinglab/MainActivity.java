@@ -66,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
                         mItemAsyncTask.cancel(true);
                     }
 
+                    mArrayList.clear();
                     mItemAsyncTask = new ItemAsyncTask();
                     mItemAsyncTask.execute(cerealURL);
 
@@ -86,6 +87,7 @@ public class MainActivity extends AppCompatActivity {
                         mItemAsyncTask.cancel(true);
                     }
 
+                    mArrayList.clear();
                     mItemAsyncTask = new ItemAsyncTask();
                     mItemAsyncTask.execute(chocolateURL);
 
@@ -106,6 +108,7 @@ public class MainActivity extends AppCompatActivity {
                         mItemAsyncTask.cancel(true);
                     }
 
+                    mArrayList.clear();
                     mItemAsyncTask = new ItemAsyncTask();
                     mItemAsyncTask.execute(teaURL);
 
@@ -117,11 +120,13 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private class ItemAsyncTask extends AsyncTask<String, Void, String>{
+    private class ItemAsyncTask extends AsyncTask<String, Void, Void>{
         @Override
-        protected String doInBackground(String... myUrl) {
+        protected Void doInBackground(String... myUrl) {
+
             String contentAsString = "";
             InputStream inputStream = null;
+
             try {
                 URL url = new URL(myUrl[0]);
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
@@ -134,7 +139,6 @@ public class MainActivity extends AppCompatActivity {
 
                 // Converts the InputStream into a string
                 contentAsString = getInputStream(inputStream);
-                return contentAsString;
 
             } catch (Throwable thr) {
                 thr.printStackTrace();
@@ -147,7 +151,6 @@ public class MainActivity extends AppCompatActivity {
                 JSONObject dataObject = new JSONObject(contentAsString); // Could take no params, or could take the string you want to use.
                 JSONArray itemJsonArray = dataObject.getJSONArray("items"); // Getting the array gets the stuff inside the object.
 
-
                 // For every object in the item array, add the name to the ArrayList.
                 for (int i = 0; i < itemJsonArray.length(); i++) {
                     JSONObject object = itemJsonArray.optJSONObject(i);
@@ -158,15 +161,15 @@ public class MainActivity extends AppCompatActivity {
             } catch (JSONException e) {
                 e.printStackTrace();
             } finally {
-            if (inputStream != null) {
-                try {
-                    inputStream.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
+                if (inputStream != null) {
+                    try {
+                        inputStream.close();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                 }
             }
-        }
-            return contentAsString;
+            return null;
         }
 
         @Override
@@ -176,10 +179,9 @@ public class MainActivity extends AppCompatActivity {
         }
 
         @Override
-        protected void onPostExecute(String aVoid) {
+        protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
             mProgressBar.setVisibility(View.GONE);
-            Log.d("ONPOSTEXECUTE", "Array = " + mArrayList.toString());
             mArrayAdapter.notifyDataSetChanged();
         }
     }
