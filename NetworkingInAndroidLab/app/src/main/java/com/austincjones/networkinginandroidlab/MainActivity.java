@@ -89,31 +89,6 @@ public class MainActivity extends AppCompatActivity {
         return builder.toString();
     }
 
-//    private String downloadUrl(String myUrl) throws IOException, JSONException {
-//        InputStream is = null;
-//        try {
-//            URL url = new URL(myUrl);
-//            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-//            conn.setRequestMethod("GET");
-//            conn.setDoInput(true);
-//
-//            // Starts the query
-//            conn.connect();
-//            is = conn.getInputStream();
-//
-//            // Converts the InputStream into a string
-//            String contentAsString = readIt(is);
-//            return contentAsString;
-//
-//            // Makes sure that the InputStream is closed after the app is
-//            // finished using it.
-//        } finally {
-//            if (is != null) {
-//                is.close();
-//            }
-//        }
-//    }
-
     public class WalmartAsyncTask extends AsyncTask<String,Void,String>{
         @Override
         protected String doInBackground(String... urls) {
@@ -133,7 +108,6 @@ public class MainActivity extends AppCompatActivity {
             try{
                 JSONObject dataObject = new JSONObject(data);
 
-                //JSONObject itemObject = dataObject.getJSONObject("items");
                 JSONArray itemJsonArray = dataObject.getJSONArray("items");
 
                 mStringArray.clear();
