@@ -133,7 +133,8 @@ public class MainActivity extends AppCompatActivity {
                 mStringArray.clear();
                 for(int counter=0;counter<itemsArray.length();counter++){
                     JSONObject theObject = itemsArray.optJSONObject(counter);
-                    mStringArray.add(theObject.getString("name"));
+                    String salePrice= theObject.getString("salePrice");
+                    mStringArray.add(theObject.getString("name")+" \n\rPRICE: "+salePrice);
                     Log.d("MainActivity", theObject.getString("name"));
                 }
 
