@@ -12,11 +12,12 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:weightSum="1">
 
         <Button
             android:id="@+id/cereal_button"
-            android:layout_width="wrap_content"
+            android:layout_width="77dp"
             android:layout_height="wrap_content"
             android:text="Cereal" />
 
@@ -28,9 +29,16 @@
 
         <Button
             android:id="@+id/tea_button"
-            android:layout_width="wrap_content"
+            android:layout_width="44dp"
             android:layout_height="wrap_content"
-            android:text="Tea" />
+            android:text="Tea"
+            android:layout_weight="0.19" />
+
+        <Button
+            android:id="@+id/clear_button"
+            android:layout_width="68dp"
+            android:layout_height="wrap_content"
+            android:text="Clear" />
 
     </LinearLayout>
     <FrameLayout
