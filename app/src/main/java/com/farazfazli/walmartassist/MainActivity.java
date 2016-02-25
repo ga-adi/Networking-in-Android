@@ -35,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
     private static final String BASE_URL = "http://api.walmartlabs.com/v1/search?query=";
     private static final String END_URL = "&format=json&apiKey=" + API_KEY;
 
+    private GrabWalmartJSONDataAsyncTask grabWalmartJSONDataAsyncTask;
+
     private ArrayList<String> mItemsArrayList;
     private ArrayAdapter<String> mArrayAdapter;
 
@@ -71,12 +73,15 @@ public class MainActivity extends AppCompatActivity {
                 mQuery = ((Button) view).getText().toString();
                 ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
                 NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
-                GrabWalmartJSONDataAsyncTask grabWalmartJSONDataAsyncTask = new GrabWalmartJSONDataAsyncTask();
-                if (activeNetworkInfo != null && activeNetworkInfo.isConnected()) {
+                if (activeNetworkInfo != null && activeNetworkInfo.isConnected()) { // has internet
+                    if(grabWalmartJSONDataAsyncTask == null) { // first run
+                        grabWalmartJSONDataAsyncTask = new GrabWalmartJSONDataAsyncTask();
+                    }
                     if(grabWalmartJSONDataAsyncTask.getStatus() != AsyncTask.Status.RUNNING) {
+                        grabWalmartJSONDataAsyncTask = new GrabWalmartJSONDataAsyncTask(); // must create another one
                         grabWalmartJSONDataAsyncTask.execute();
                     } else {
-                        Log.i(TAG, "Already running!"); // I believe it's already queueing up tasks here
+                        Log.i(TAG, "Already running!");
                         Toast.makeText(MainActivity.this, "Already running!", Toast.LENGTH_SHORT).show();
                     }
                 } else {
