@@ -29,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
     private ArrayList<String> mStringArray;
     private ArrayAdapter<String> mAdapter;
 
+    DownloadAsyncTask mDownloaderAsyncTask;
+
     Button mCereal;
     Button mChocolate;
     Button mTea;
@@ -60,6 +62,9 @@ public class MainActivity extends AppCompatActivity {
         mCereal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (mDownloaderAsyncTask != null && mDownloaderAsyncTask.getStatus() != AsyncTask.Status.FINISHED){
+                    mDownloaderAsyncTask.cancel(true);
+                }
                 DownloadAsyncTask downloadAsyncTask = new DownloadAsyncTask();
                 downloadAsyncTask.execute(cerealUrl);
             }
@@ -68,6 +73,9 @@ public class MainActivity extends AppCompatActivity {
         mChocolate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (mDownloaderAsyncTask != null && mDownloaderAsyncTask.getStatus() != AsyncTask.Status.FINISHED){
+                    mDownloaderAsyncTask.cancel(true);
+                }
                 DownloadAsyncTask downloadAsyncTask = new DownloadAsyncTask();
                 downloadAsyncTask.execute(chocolateUrl);
             }
@@ -76,6 +84,9 @@ public class MainActivity extends AppCompatActivity {
         mTea.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (mDownloaderAsyncTask != null && mDownloaderAsyncTask.getStatus() != AsyncTask.Status.FINISHED){
+                    mDownloaderAsyncTask.cancel(true);
+                }
                 DownloadAsyncTask downloadAsyncTask = new DownloadAsyncTask();
                 downloadAsyncTask.execute(teaUrl);
             }
