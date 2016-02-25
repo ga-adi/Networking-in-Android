@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">NetworkingInAndroidHomework</string>
+    <string name="api_key">av3vuutdbxvyfbymb22sgaqg</string>
+    <string name="all_cereal_query">"all+cereal"</string>
+    <string name="chocolate_query">chocolate</string>
+    <string name="tea_query">tea</string>
+    <string name="all_cereal_id">"976759_976783_1001339"</string>
+    <string name="chocolate_id">976759_1096070_1224976</string>
+    <string name="tea_id">976759_976782_1001320</string>
+
+</resources>
