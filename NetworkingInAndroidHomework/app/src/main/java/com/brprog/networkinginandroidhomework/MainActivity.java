@@ -26,17 +26,13 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    private String mApiKey = "av3vuutdbxvyfbymb22sgaqg";
-    private String mAllCerealUrlString = "http://api.walmartlabs.com/v1/search?query=all+cereal&format=json&categoryId=976759_976783_1001339&apiKey=av3vuutdbxvyfbymb22sgaqg";
-    private String mChocolateUrlString = "http://api.walmartlabs.com/v1/search?query=chocolate&format=json&categoryId=976759_1096070_1224976&apiKey=av3vuutdbxvyfbymb22sgaqg";
-    private String mTeaUrlString = "http://api.walmartlabs.com/v1/search?query=tea&format=json&categoryId=976759_976782_1001320&apiKey=av3vuutdbxvyfbymb22sgaqg";
-
     Button mCerealButton;
     Button mChocolateButton;
     Button mTeaButton;
     ListView mProductsListView;
     ArrayList<String> mWalmartArrayList;
     ArrayAdapter<String> mProductsAdapter;
+    DownloadAsyncTask mWalmartTask;
 
 
     @Override
@@ -80,10 +76,14 @@ public class MainActivity extends AppCompatActivity {
         ConnectivityManager connMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
         if (networkInfo != null && networkInfo.isConnected()) {
-            DownloadAsyncTask walmartTask = new DownloadAsyncTask();
-            walmartTask.execute("http://api.walmartlabs.com/v1/search?query=" + getString(query)
-                    + "&format=json&categoryId=" + getString(taxonomyId)
-                    + "&apiKey=" + getString(R.string.api_key));
+            if (mWalmartTask != null && mWalmartTask.getStatus() != DownloadAsyncTask.Status.FINISHED) {
+                mWalmartTask.cancel(true);
+            } else {
+                mWalmartTask = new DownloadAsyncTask();
+                mWalmartTask.execute("http://api.walmartlabs.com/v1/search?query=" + getString(query)
+                        + "&format=json&categoryId=" + getString(taxonomyId)
+                        + "&apiKey=" + getString(R.string.api_key));
+            }
         } else {
             Toast.makeText(MainActivity.this, "Unable to connect to IT services", Toast.LENGTH_SHORT).show();
         }
@@ -125,7 +125,8 @@ public class MainActivity extends AppCompatActivity {
                 for (int i =0; i < itemsJSONArray.length(); i++) {
                     JSONObject object = itemsJSONArray.optJSONObject(i);
                     String name = object.optString("name");
-                    mWalmartArrayList.add(name);
+                    String price = object.optString("salePrice");
+                    mWalmartArrayList.add(name + " \nCosts: $" + price);
                 }
             } catch (JSONException e) {
                 e.printStackTrace();
