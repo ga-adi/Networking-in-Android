@@ -17,9 +17,13 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.lang.reflect.Array;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -81,10 +85,22 @@ public class MainActivity extends AppCompatActivity {
                 mStringArray.clear();
 
                 for(int counter=0;counter<itemsArray.length();counter++){
-                    JSONObject theObject = itemsArray.optJSONObject(counter);
-                    // Log.d("MainActivity", theObject.getString("name"));
-                    mStringArray.add(theObject.getString("away"));
+                    JSONObject jsonGames = itemsArray.getJSONObject(counter);
+                    mStringArray.add(jsonGames.getString("id"));
+                    JSONObject away = jsonGames.getJSONObject("away");
+                    Object alias = away.get("alias");
+                    ArrayList<Object> aliasArray = new ArrayList();
+                    aliasArray.add(alias);
+                    Log.d("alias", "we got: " + aliasArray);
+                       int okcPosition =  aliasArray.indexOf("OKC");
+                    Log.d("position","the position is: "+okcPosition);
+
+
+
+                    //implement if position = 0 get
+
                 }
+                //research iterators
 
 
             } catch (JSONException e) {
@@ -118,4 +134,5 @@ public class MainActivity extends AppCompatActivity {
             return builder.toString();
         }
     }
+
 }
